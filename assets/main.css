@@ -1,0 +1,477 @@
+/* Import Font (Opsional, tapi mirip dengan desain) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap');
+
+/* Variabel Warna Global */
+:root {
+    --main-green: #00a98f; /* Warna hijau utama dari desain */
+    --dark-green: #0b6c5c; /* Warna hijau tua untuk card & box */
+    --light-gray-bg: #f8f9fa; /* Warna latar belakang abu-abu muda */
+}
+
+/* Gaya Global */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+/* Definisikan warna teks utama */
+.text-main-green {
+    color: var(--main-green);
+}
+
+/* Tombol custom agar lebih bulat */
+.btn.rounded-pill {
+    border-radius: 50rem;
+    font-weight: 500;
+}
+
+/* =================================== */
+/* BAGIAN 1: HERO SECTION & NAVBAR */
+/* =================================== */
+.hero-section {
+    /* Latar belakang gradien seperti di gambar */
+    background: linear-gradient(110deg, var(--main-green) 0%, var(--dark-green) 100%);
+    
+    /* Ini untuk memberi bentuk gelombang di bawah, 
+       tapi untuk saat ini kita buat sederhana dulu */
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    overflow: hidden; /* Mencegah konten 'tumpah' */
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    margin: 0 0.5rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #fff;
+    font-weight: 700;
+}
+
+/* Placeholder untuk gambar HP, bisa kamu hapus saat ganti dengan <img> */
+.phones-placeholder {
+    border: 2px dashed rgba(255, 255, 255, 0.3);
+    padding: 10rem 3rem;
+    border-radius: 2rem;
+}
+/* =================================== */
+/* BAGIAN 1: PERBAIKAN NAVBAR & DROPDOWN */
+/* =================================== */
+
+/* Mengganti warna link navbar-dark (Bootstrap default) */
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #fff;
+}
+
+/* Garis bawah untuk link aktif/hover (Desktop) */
+.navbar-nav .nav-link {
+    position: relative;
+    padding-bottom: 0.5rem; /* Beri ruang untuk garis bawah */
+}
+
+.navbar-nav .nav-link.active::after,
+.navbar-nav .nav-link:hover::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0.5rem;
+    right: 0.5rem;
+    height: 1px;
+     /* Warna oranye/gold dari gambar */
+    border-radius: 1px;
+}
+
+/* Hilangkan garis bawah saat dropdown terbuka */
+.navbar-nav .nav-item.dropdown .nav-link[aria-expanded="true"]::after {
+    display: none;
+}
+
+
+/* Styling Dropdown Menu (Desktop) */
+.navbar-nav .dropdown-menu {
+    border-radius: 1rem; /* Sudut lebih bulat */
+    border: none;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 0;
+    margin-top: 0.5rem; /* Jarak dari nav-link */
+}
+
+.dropdown-item {
+    font-weight: 500;
+    padding: 0.5rem 1.5rem;
+}
+
+.dropdown-item:hover {
+    background-color: var(--light-gray-bg);
+    color: var(--main-green);
+}
+
+
+/* === PERBAIKAN TAMPILAN MOBILE === */
+@media (max-width: 991.98px) {
+    /* Memberi latar belakang solid pada menu mobile */
+    .hero-section .navbar-collapse {
+        background-color: var(--dark-green);
+        border-radius: 1rem;
+        padding: 1.5rem;
+        margin-top: 0.5rem;
+    }
+    
+    /* Tombol di mobile agar full-width */
+    .hero-section .navbar-collapse .w-100 {
+        width: 100% !important;
+    }
+
+    /* Hilangkan garis bawah di mobile */
+    .navbar-nav .nav-link.active::after,
+    .navbar-nav .nav-link:hover::after {
+        display: none;
+    }
+    
+    /* Buat dropdown menu di mobile menyatu */
+    .navbar-nav .dropdown-menu {
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+        padding: 0 0 0 1rem; /* Inden ke dalam */
+    }
+    
+    .navbar-nav .dropdown-item {
+        color: rgba(255, 255, 255, 0.7);
+        padding: 0.35rem 0;
+    }
+    
+    .navbar-nav .dropdown-item:hover {
+        background-color: transparent;
+        color: #fff;
+    }
+}
+
+/* =================================== */
+/* BAGIAN 2: SERVICES SECTION */
+/* =================================== */
+.services-section {
+    background-color: var(--light-gray-bg);
+}
+
+.service-card {
+    border: none;
+    border-radius: 2rem; /* Membuat sudut sangat bulat */
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.service-card.card-dark {
+    background-color: var(--dark-green);
+}
+
+.service-card.card-light {
+    background-color: #fff;
+    /* Memberi efek 'terangkat' seperti di gambar */
+    transform: scale(1.05); 
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15);
+    z-index: 10;
+}
+
+/* Tombol panah navigasi */
+
+.service-card {
+    border: none;
+    border-radius: 2rem; 
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    overflow: hidden; /* Penting agar efek hover rapi */
+}
+
+.service-card.card-dark {
+    background-color: var(--dark-green);
+}
+
+.service-card.card-light {
+    background-color: #fff;
+    transform: scale(1.05); /* Kartu tengah tetap terangkat */
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15);
+    z-index: 10;
+}
+
+/* Ini adalah tinggi minimum kartu agar semua sama */
+.service-card .card-body {
+    min-height: 480px; 
+    z-index: 2;
+    position: relative;
+}
+
+/* Wrapper untuk konten yang bisa berubah (gambar & detail) */
+.service-content-wrapper {
+    position: relative;
+    flex-grow: 1;
+    min-height: 300px; /* Beri ruang untuk gambar atau teks */
+}
+
+/* Posisi absolut untuk kedua state (gambar & detail) */
+.service-card-image,
+.service-card-details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Tengahkan horizontal */
+    justify-content: center; /* Tengahkan vertikal */
+}
+
+/* == EFEK HOVER == */
+
+/* State Default: Gambar terlihat, Detail tersembunyi */
+.service-card-image {
+    opacity: 1;
+    transform: scale(1);
+    visibility: visible;
+}
+.service-card-details {
+    opacity: 0;
+    transform: scale(0.95); /* Efek zoom-out sedikit */
+    visibility: hidden;
+}
+
+/* State Hover: Gambar tersembunyi, Detail terlihat */
+.service-card:hover .service-card-image {
+    opacity: 0;
+    transform: scale(0.95);
+    visibility: hidden;
+}
+.service-card:hover .service-card-details {
+    opacity: 1;
+    transform: scale(1); /* Efek zoom-in */
+    visibility: visible;
+}
+
+/* == STYLING GAMBAR KARAKTER & LIST == */
+
+.service-char-img {
+    max-height: 220px; /* Ukuran gambar di kartu hijau */
+    width: auto;
+    margin-top: auto; /* Dorong ke bawah */
+}
+.service-char-img-light {
+    max-height: 250px; /* Ukuran gambar di kartu putih */
+    width: auto;
+}
+
+.service-list {
+    font-size: 0.9rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.service-list li {
+    margin-bottom: 0.35rem;
+}
+/* Ikon checklist */
+.service-list li i {
+    color: var(--main-green); /* Warna ikon checklist */
+    margin-right: 8px;
+}
+.card-light .service-list li i {
+    color: var(--main-green); /* Warna ikon di kartu putih */
+}
+
+
+/* == STYLING NAVIGASI SWIPER (Panah) == */
+
+/* Ganti --swiper-theme-color agar sesuai tema */
+:root {
+    --swiper-theme-color: var(--dark-green);
+}
+
+.service-swiper .swiper-button-next,
+.service-swiper .swiper-button-prev {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: var(--dark-green); /* Warna panahnya */
+}
+/* Mengatur ukuran ikon panah di dalam tombol */
+.service-swiper .swiper-button-next::after,
+.service-swiper .swiper-button-prev::after {
+    font-size: 1.2rem; /* Kecilkan panah default swiper */
+    font-weight: 800;
+}
+/* Posisikan di luar container */
+.service-swiper .swiper-button-prev {
+    left: -10px;
+}
+.service-swiper .swiper-button-next {
+    right: -10px;
+}
+
+/* Sembunyikan panah di mobile (karena scroll) */
+@media (max-width: 991.98px) {
+    .service-swiper .swiper-button-next,
+    .service-swiper .swiper-button-prev {
+        display: none;
+    }
+}
+
+/* =================================== */
+/* BAGIAN 3: LIVESHOPPING SECTION */
+/* =================================== */
+.liveshopping-section {
+    background-color: #fff;
+}
+
+.live-box {
+    background-color: var(--dark-green);
+    border-radius: 2rem; /* Sudut bulat besar */
+}
+
+.live-box-subtext {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    display: inline-block;
+}
+
+.live-list li {
+    position: relative;
+    padding-left: 1.5rem; /* Ruang untuk bullet custom */
+    margin-bottom: 0.5rem;
+}
+
+/* Membuat bullet custom (titik) */
+.live-list li::before {
+    content: '\2022'; /* Kode untuk bullet */
+    color: var(--main-green); /* Warna bullet */
+    font-weight: bold;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+}
+/* =================================== */
+/* TAMBAHAN UNTUK BAGIAN 4 - 9 */
+/* =================================== */
+
+/* Utility Classes */
+.bg-dark-green {
+    background-color: var(--dark-green);
+}
+
+.bg-light-gray {
+    background-color: var(--light-gray-bg);
+}
+
+/* Tombol custom baru */
+.btn-dark-green {
+    background-color: var(--dark-green);
+    color: #fff;
+    font-weight: 500;
+}
+.btn-dark-green:hover {
+    background-color: #08584a; /* Sedikit lebih gelap dari dark-green */
+    color: #fff;
+}
+
+/* Placeholder untuk gambar */
+.placeholder-img {
+    background-color: #e9ecef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6c757d;
+    font-weight: 500;
+    width: 100%;
+}
+
+/* =================================== */
+/* BAGIAN 5: KENAPA SOCIAL BREAD */
+/* =================================== */
+.reason-box {
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.05);
+}
+/* Hilangkan margin-bottom di box terakhir */
+.reason-box:last-child {
+    margin-bottom: 0;
+}
+
+/* =================================== */
+/* BAGIAN 7: PENCAPAIAN KAMI */
+/* =================================== */
+.stat-card .display-4 {
+    line-height: 1; /* Membuat angka lebih rapat dengan teks */
+}
+.stat-card .fs-5 {
+    line-height: 1.2;
+}
+
+/* =Ganti ikon panah di box besar */
+.stat-card .bi-arrow-up-short {
+    font-size: 0.8em; /* Relatif terhadap ukuran teks induk */
+    vertical-align: middle;
+}
+
+/* =================================== */
+/* BAGIAN 8: PARTNERS & PRESS */
+/* =================================== */
+.partner-logo {
+    /* Ganti ini dengan tag <img> saat kamu punya logonya */
+    background-color: #f8f9fa;
+    color: #adb5bd;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* =================================== */
+/* BAGIAN 9: FOOTER */
+/* =================================== */
+.footer-link-list li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-link-list a {
+    color: rgba(255, 255, 255, 0.75); /* Putih transparan */
+    text-decoration: none;
+    transition: all 0.2s ease;
+    font-size: 0.9rem;
+}
+
+.footer-link-list a:hover {
+    color: #fff; /* Putih solid */
+    text-decoration: underline;
+    padding-left: 4px; /* Efek geser sedikit */
+}
+
+.footer-social-icons a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 0.75rem;
+    transition: color 0.2s ease;
+}
+
+.footer-social-icons a:hover {
+    color: var(--main-green); /* Warna hijau utama */
+}
+
+.footer-section .fs-6 {
+    font-size: 0.9rem !important;
+}
+
+.footer-section p {
+    line-height: 1.7;
+}

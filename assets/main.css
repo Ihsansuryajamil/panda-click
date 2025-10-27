@@ -316,10 +316,10 @@ body {
 }
 /* Posisikan di luar container */
 .service-swiper .swiper-button-prev {
-    left: -10px;
+    left: 10px;
 }
 .service-swiper .swiper-button-next {
-    right: -10px;
+    right: 10px;
 }
 
 /* Sembunyikan panah di mobile (karena scroll) */
@@ -443,7 +443,134 @@ body {
     font-size: 0.8rem;
     font-weight: 500;
 }
+/* =================================== */
+/* PERBAIKAN HOVER TESTIMONI STATIS */
+/* =================================== */
 
+/* Ini akan override 'aspect-ratio: 4 / 3' dari slider,
+   agar gambar statis ini bisa tampil penuh */
+#static-testi-card img {
+    aspect-ratio: auto; /* Biarkan gambar menggunakan rasio aslinya */
+    border-radius: 0.5rem; /* Sesuaikan radius dengan overlay */
+}
+/* =================================== */
+/* BAGIAN 8: STYLING TESTIMONI ADS SLIDER */
+/* =================================== */
+
+.testimonial-ads-card {
+    background-color: #fff;
+    border-radius: 0.75rem; /* Sudut bulat untuk kartu */
+    padding: 0.5rem; /* Padding kecil di dalam kartu */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+    border: 1px solid #eee;
+    /* Kita biarkan swiper yang mengatur tinggi */
+}
+
+.testimonial-ads-card img {
+    width: 100%;
+    /* Ini kunci agar semua kartu SAMA TINGGI */
+    aspect-ratio: 4 / 3; 
+    object-fit: cover; /* 'cover' agar gambar memenuhi, 'contain' jika ingin lihat utuh */
+    border-radius: 0.5rem; /* Sudut bulat untuk gambar di dalam */
+}
+/* Meniru style tombol navigasi dari slider lain */
+.ads-testimonial-swiper .swiper-button-next,
+.ads-testimonial-swiper .swiper-button-prev,
+.website-swiper .swiper-button-next,  /* TAMBAHKAN BARIS INI */
+.website-swiper .swiper-button-prev {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: var(--dark-green); /* Warna panahnya */
+}
+
+.ads-testimonial-swiper .swiper-button-next::after,
+.ads-testimonial-swiper .swiper-button-prev::after {
+    font-size: 1.2rem; /* Ukuran panah */
+    font-weight: 800;
+}
+
+/* Posisikan tombol agar tidak di luar container */
+.ads-testimonial-swiper .swiper-button-prev,
+.website-swiper .swiper-button-prev {
+    left: 5px;
+}
+.ads-testimonial-swiper .swiper-button-next,
+.website-swiper .swiper-button-next {
+    right: 5px;
+}
+
+/* Sembunyikan panah di mobile (sama seperti slider lain) */
+@media (max-width: 991.98px) {
+    .ads-testimonial-swiper .swiper-button-next,
+    .ads-testimonial-swiper .swiper-button-prev,
+    .website-swiper .swiper-button-next, /* TAMBAHKAN BARIS INI */
+    .website-swiper .swiper-button-prev {
+        display: none;
+    }
+}
+
+/* =================================== */
+/* EFEK HOVER UNTUK TESTIMONI ADS */
+/* =================================== */
+
+/* 1. Jadikan kartu sebagai "jangkar" untuk overlay */
+.testimonial-ads-card {
+    position: relative;
+    /* overflow: hidden penting agar overlay tidak keluar dari 
+       sudut bulat kartu */
+    overflow: hidden; 
+}
+
+/* 2. Beri transisi pada gambar agar efek blur mulus */
+.testimonial-ads-card img {
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+/* 3. Buat style untuk overlay teks */
+.testimonial-ads-overlay {
+    /* Posisikan menutupi seluruh kartu */
+    position: absolute;
+    top: 0.5rem;    /* Sesuaikan dengan padding 0.5rem di .testimonial-ads-card */
+    left: 0.5rem;
+    right: 0.5rem;
+    bottom: 0.5rem;
+    border-radius: 0.5rem; /* Sesuaikan dengan border-radius gambar */
+    
+    /* Latar belakang gelap transparan */
+    background-color: #fff;
+    backdrop-filter: blur(2px); /* Efek blur tambahan pada background */
+    
+    /* Atur Teks */
+    color: #212121;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+
+    /* Sembunyikan secara default */
+    opacity: 0;
+    
+    /* Transisi saat muncul */
+    transition: opacity 0.3s ease;
+}
+
+/* 4. Tentukan apa yang terjadi saat di-hover */
+
+/* Saat kartu di-hover, buat gambar blur dan sedikit membesar (efek zoom) */
+.testimonial-ads-card:hover img {
+    filter: blur(4px) brightness(0.8);
+    transform: scale(1.05); /* Efek zoom-in sedikit */
+}
+
+/* Saat kartu di-hover, tampilkan overlay */
+.testimonial-ads-card:hover .testimonial-ads-overlay {
+    opacity: 1;
+}
 /* =================================== */
 /* BAGIAN 9: FOOTER */
 /* =================================== */
@@ -481,4 +608,158 @@ body {
 
 .footer-section p {
     line-height: 1.7;
+}
+/* =================================== */
+/* BAGIAN 10: TESTIMONI */
+/* =================================== */
+
+.testimonial-swiper {
+    /* overflow: hidden diperlukan agar rounded-corners 
+       dari .testimonial-card terlihat */
+    overflow: hidden;
+    padding: 0.5rem; /* Beri sedikit ruang untuk shadow */
+}
+
+.testimonial-card {
+    /* Gradien hijau seperti di gambar */
+    background: linear-gradient(110deg, var(--main-green) 0%, #a0d468 100%);
+    border-radius: 2rem;
+    padding: 3rem;
+    color: #fff;
+    min-height: 350px; /* Atur tinggi minimum */
+    
+    /* Menambahkan shadow halus */
+    box-shadow: 0 1rem 3rem rgba(0, 169, 143, 0.2); 
+    
+    /* Flexbox untuk mendorong author ke bawah (jika perlu) */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.testimonial-quote {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+    /* Pastikan quote bisa memanjang ke bawah */
+    flex-grow: 1; 
+}
+
+.testimonial-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 1rem;
+    object-fit: cover;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.2); /* Fallback jika img tidak ada */
+}
+
+/* Styling Tombol Navigasi Kustom */
+.testimonial-nav-prev,
+.testimonial-nav-next {
+    position: absolute;
+    bottom: 3rem; /* Posisikan di dalam kartu */
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    font-size: 1.2rem;
+}
+
+.testimonial-nav-next {
+    right: 3rem; /* Posisikan di dalam kartu */
+}
+.testimonial-nav-prev {
+    right: 6rem; /* Posisikan di sebelah tombol next */
+}
+
+.testimonial-nav-prev:hover,
+.testimonial-nav-next:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+/* =================================== */
+/* BAGIAN 11: HALAMAN KONTAK */
+/* =================================== */
+
+.contact-section .contact-sub-title {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.contact-info-item .bi {
+    /* Menjaga ikon sejajar dengan baris pertama teks */
+    margin-top: 0.25rem; 
+}
+
+/* Styling untuk daftar social media */
+.contact-social-list .list-group-item {
+    padding-left: 0;
+    padding-right: 0;
+    background-color: transparent; /* Sesuaikan dengan bg-light-gray */
+    border-bottom: 1px solid #dee2e6;
+}
+.contact-social-list .list-group-item:last-child {
+    border-bottom: none;
+}
+
+.contact-social-list .contact-social-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #212529; /* Warna teks gelap */
+    font-weight: 500;
+    padding: 0.75rem 0.25rem;
+    transition: all 0.2s ease;
+}
+
+.contact-social-list .contact-social-link i {
+    color: var(--dark-green); /* Warna ikon hijau tua */
+    transition: all 0.2s ease;
+}
+
+.contact-social-list .contact-social-link:hover {
+    color: var(--main-green); /* Teks jadi hijau saat hover */
+}
+.contact-social-list .contact-social-link:hover i {
+    transform: scale(1.1); /* Ikon membesar sedikit */
+}
+
+/* Tombol WhatsApp besar baru */
+.btn-whatsapp {
+    background-color: #0b6c5c; /* Warna resmi WhatsApp */
+    color: #fff;
+    border-color: #25D366;
+    transition: all 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+    background-color: #1EAE50; /* Warna lebih gelap saat hover */
+    color: #fff;
+    border-color: #0b6c5c;
+    transform: scale(1.02); /* Efek 'lift' */
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+}
+
+/* Wrapper untuk Peta */
+.map-wrapper {
+    overflow: hidden; /* Penting agar iframe mengikuti rounded-4 */
+    height: 100%;
+    min-height: 450px;
+}
+
+.map-wrapper iframe {
+    /* Pastikan iframe mengisi penuh wrapper */
+    width: 100%;
+    height: 100%;
+    margin-bottom: -7px; /* Perbaikan umum untuk 'gap' di bawah iframe */
 }

@@ -19,7 +19,9 @@
         <nav class="navbar navbar-expand-lg navbar-dark position-absolute w-100 pt-3">
             <div class="container">
                 <img src="assets/img/panda3_icon.png" alt="" style="width: 50px;margin-right: 10px;">
-                <a class="navbar-brand fw-bold fs-4" href="index.html">Click Panda</a>
+                <a class="navbar-brand fw-bold fs-4" href="index.html">
+                    <span style="color: #000;">Click</span> Panda
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -27,44 +29,49 @@
                     <ul class="navbar-nav mx-auto">
                         
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-lang="nav-services">
                                 Layanan Kami
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="index.html#liveShopping">Live Shopping</a></li>
-                                <li><a class="dropdown-item" href="index.html#webDev">Website Development</a></li>
-                                <li><a class="dropdown-item" href="index.html#ads">Ads Service</a></li>
+                                <li><a class="dropdown-item" href="index.html#liveShopping" data-lang="nav-live">Live Shopping</a></li>
+                                <li><a class="dropdown-item" href="index.html#webDev" data-lang="nav-webdev">Website Development</a></li>
+                                <li><a class="dropdown-item" href="index.html#ads" data-lang="nav-ads">Ads Service</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-lang="nav-testimoni">
                                 Testimoni
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="testimoni.html#tentangkami">Tentang Kami</a></li>
-                                <li><a class="dropdown-item" href="testimoni.html#partnerlive">Partner Live Shopping</a></li>
-                                <li><a class="dropdown-item" href="testimoni.html#testimoniads">Testimoni Ads</a></li>
+                                <li><a class="dropdown-item" href="testimoni.html#tentangkami" data-lang="nav-about">Tentang Kami</a></li>
+                                <li><a class="dropdown-item" href="testimoni.html#partnerlive" data-lang="nav-partner-live">Partner Live Shopping</a></li>
+                                <li><a class="dropdown-item" href="testimoni.html#testimoniads" data-lang="nav-testi-ads">Testimoni Ads</a></li>
                             </ul>
                         </li>
                         
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-lang="nav-contact">
                                 Kontak
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="contact.html">Informasi Kontak</a></li>
-                                <li><a class="dropdown-item" href="contact.html#socialmedia">Media Social</a></li>
+                                <li><a class="dropdown-item" href="contact.html" data-lang="nav-contact-info">Informasi Kontak</a></li>
+                                <li><a class="dropdown-item" href="contact.html#socialmedia" data-lang="nav-social">Media Social</a></li>
                             </ul>
                         </li>
+                        <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">
+                                Testimoni
+                            </a>
+                        </li> -->
                     </ul>
-                    
                     <div class="d-flex flex-column flex-lg-row align-items-center mt-3 mt-lg-0">
                         <div class="d-flex lang-switcher">
-                            <a href="#" class="text-white text-decoration-none fw-bold">ID</a>
+                            <a href="#" class="text-white text-decoration-none fw-bold" id="lang-btn-id">ID</a>
                             <span class="text-white-50 mx-1">|</span>
-                            <a href="#" class="text-white-50 text-decoration-none">EN</a>
+                            <a href="#" class="text-white-50 text-decoration-none" id="lang-btn-en">EN</a>
                         </div>
                     </div>
+                    
                 </div>
             </div>
         </nav>
@@ -72,12 +79,12 @@
         <div class="container">
             <div class="row min-vh-100 align-items-center text-white">
                 <div class="col-lg-6">
-                    <h1 class="display-3 fw-bolder">Hubungi Kami</h1>
-                    <p class="lead my-4">Punya pertanyaan atau ingin memulai proyek dengan kami? Tim kami siap membantu mewujudkan ide digital Anda.</p>
+                    <h1 class="display-3 fw-bolder" data-lang="contact-hero-title">Hubungi Kami</h1>
+                    <p class="lead my-4" data-lang="contact-hero-subtitle">Punya pertanyaan atau ingin memulai proyek dengan kami? Tim kami siap membantu mewujudkan ide digital Anda.</p>
                 </div>
                 <div class="col-lg-6 text-center d-none d-lg-block">
                     <div class="phones-placeholder">
-                        <h3 class="text-white-50">(Placeholder Gambar Kontak)</h3>
+                        <h3 class="text-white-50" data-lang="contact-hero-placeholder">(Placeholder Gambar Kontak)</h3>
                     </div>
                 </div>
             </div>
@@ -89,57 +96,59 @@
             <div class="row g-5">
                 
                 <div class="col-lg-6">
-                    <h5 class="contact-sub-title text-main-green fw-bold">INFORMATION</h5>
-                    <h2 class="fw-bolder mb-3">CONTACT US</h2>
-                    <p class="text-muted">
+                    <h5 class="contact-sub-title text-main-green fw-bold" data-lang="contact-info-subtitle">INFORMASI</h5>
+                    <h2 class="fw-bolder mb-3" data-lang="contact-info-title">HUBUNGI KAMI</h2>
+                    <p class="text-muted" data-lang="contact-info-desc">
                         Kami siap membantu. Jangan ragu untuk menghubungi kami melalui detail di bawah ini atau kunjungi lokasi kami.
                     </p>
 
-                    <h4 class="fw-bold mt-4 mb-3">ADDRESS</h4>
+                    <h4 class="fw-bold mt-4 mb-3" data-lang="contact-addr-title">ALAMAT</h4>
                     <div class="contact-info-item d-flex align-items-start">
                         <i class="bi bi-geo-alt-fill text-main-green fs-4 me-3"></i>
                         <div>
-                            <h6 class="fw-bold mb-0">Click Panda Office</h6>
-                            <p class="text-muted mb-0">Ruko DUTA GARDEN SQUARE A15, Jl. Husein Sastranegara, Jurumudi, Kecamatan Benda, Kota Tangerang, Banten 15124.</p>
+                            <h6 class="fw-bold mb-0" data-lang="contact-addr-name">Kantor Click Panda</h6>
+                            <p class="text-muted mb-0" data-lang="contact-addr-detail">Ruko DUTA GARDEN SQUARE A15, Jl. Husein Sastranegara, Jurumudi, Kecamatan Benda, Kota Tangerang, Banten 15124.</p>
                         </div>
                     </div>
                     
-                    <h4 class="fw-bold mt-5 mb-3" id="socialmedia">SOCIAL MEDIA</h4>
+                    <h4 class="fw-bold mt-5 mb-3" id="socialmedia" data-lang="contact-social-title">MEDIA SOSIAL</h4>
                     <ul class="list-group list-group-flush contact-social-list">
+                        
                         <li class="list-group-item list-group-item-action d-flex align-items-center">
                             <a href="https://api.whatsapp.com/send?phone=6281311088288&text=Halo%20Tim%20Click%20Panda%2C%20Saya%20ingin%20tahu%20lebih%20banyak%20tentang%20solusi%20yang%20ditawarkan%20oleh%20kalian.%20Apa%20bisa%20di%20bantu%20jelaskan%3F" target="_blank" class="contact-social-link">
                                 <i class="bi bi-whatsapp fs-4 me-3"></i>
-                                <span>+62 812-8767-2836</span>
+                                <span data-lang="contact-social-wa">+62 812-8767-2836</span>
                             </a>
                         </li>
                         <li class="list-group-item list-group-item-action d-flex align-items-center">
                             <a href="#" class="contact-social-link">
                                 <i class="bi bi-instagram fs-4 me-3"></i>
-                                <span>clikpandaa</span>
+                                <span data-lang="contact-social-ig">clikPanda</span>
                             </a>
                         </li>
                         <li class="list-group-item list-group-item-action d-flex align-items-center">
                             <a href="#" class="contact-social-link">
                                 <i class="bi bi-facebook fs-4 me-3"></i>
-                                <span>Clik Panda</span>
+                                <span data-lang="contact-social-fb">Clik Panda</span>
                             </a>
                         </li>
                         <li class="list-group-item list-group-item-action d-flex align-items-center">
                             <a href="#" class="contact-social-link">
                                 <i class="bi bi-tiktok fs-4 me-3"></i>
-                                <span>clik.panda</span>
+                                <span data-lang="contact-social-tt">clik.panda</span>
                             </a>
                         </li>
                     </ul>
 
                     <a href="https://api.whatsapp.com/send?phone=6281311088288&text=Halo%20Tim%20Click%20Panda%2C%20Saya%20ingin%20tahu%20lebih%20banyak%20tentang%20solusi%20yang%20ditawarkan%20oleh%20kalian.%20Apa%20bisa%20di%20bantu%20jelaskan%3F" target="_blank" class="btn btn-whatsapp btn-lg w-100 mt-4 rounded-pill fw-bold">
-                        <i class="bi bi-whatsapp me-2"></i> Contact via WhatsApp
+                        <i class="bi bi-whatsapp me-2"></i> 
+                        <span data-lang="contact-social-btn">Kontak via WhatsApp</span>
                     </a>
                 </div>
 
                 <div class="col-lg-6">
                     <div class="map-wrapper shadow-sm rounded-4">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.866085141315!2d106.68961407498999!3d-6.148113993838289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f91a996f6e19%3A0x821c31325d70b138!2sDuta%20Garden%20Square!5e0!3m2!1sen!2sid!4v1730013050478!5m2!1sen!2sid" 
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.9064649825787!2d106.6803587!3d-6.1432649999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f9ca4dfc2b25%3A0x15d0b00dba4f2461!2ssepatu%20anak%20murah!5e0!3m2!1sid!2sid!4v1761585176707!5m2!1sid!2sid" 
                             width="100%" 
                             height="550" 
                             style="border:0;" 
@@ -156,10 +165,10 @@
         <div class="container">
             <div class="row justify-content-between align-items-center">
                 <div class="col-md-7">
-                    <h1 class="display-4 fw-bolder">Anda Memiliki Pertanyaan?</h1>
+                    <h1 class="display-4 fw-bolder" data-lang="footer-cta-title">Anda Memiliki Pertanyaan?</h1>
                 </div>
                 <div class="col-md-5 text-md-end mt-3 mt-md-0">
-                    <a href="https://api.whatsapp.com/send?phone=6281311088288&text=Halo%20Tim%20Click%20Panda%2C%20Saya%20ingin%20tahu%20lebih%20banyak%20tentang%20solusi%20yang%20ditawarkan%20oleh%20kalian.%20Apa%20bisa%20di%20bantu%20jelaskan%3F " class="btn btn-outline-light rounded-pill px-4 py-2 fs-5">Hubungi kami &rarr;</a>
+                    <a href="https://api.whatsapp.com/send?phone=6281311088288&text=Halo%20Tim%20Click%20Panda%2C%20Saya%20ingin%20tahu%20lebih%20banyak%20tentang%20solusi%20yang%20ditawarkan%20oleh%20kalian.%20Apa%20bisa%20di%20bantu%20jelaskan%3F " class="btn btn-outline-light rounded-pill px-4 py-2 fs-5" data-lang="footer-cta-btn">Hubungi kami &rarr;</a>
                 </div>
             </div>
 
@@ -168,46 +177,48 @@
             <div class="row gy-4">
                 <div class="col-lg-4">
                     
-                    <h3 class="fw-bold mb-3"><img src="assets/img/panda3_icon.png" alt="" style="width: 50px;margin-right: 10px;">Click Panda</h3>
-                    <p class="fs-6 opacity-75">
+                    <h3 class="fw-bold mb-3"><img src="assets/img/panda3_icon.png" alt="" style="width: 50px;margin-right: 10px;"><span style="color: #000;">Click</span> Panda</h3>
+                    
+                    <p class="fs-6 opacity-75" data-lang="footer-address">
                         - Ruko DUTA GARDEN SQUARE A15<br>
                         - Jl. Husein Sastranegara,
-                         Jurumudi, Kecamatan Benda,
+                        Jurumudi, Kecamatan Benda,
                         Kota Tangerang, Banten 15124.
                     </p>
                 </div>
 
                 <div class="col-lg-3 col-md-4 col-6">
-                    <h6 class="fw-bold mb-3">Layanan</h6>
+                    <h6 class="fw-bold mb-3" data-lang="footer-links-services">Layanan</h6>
                     <ul class="list-unstyled footer-link-list">
-                        <li><a href="index.html#liveShopping">Live Shopping</a></li>
-                        <li><a href="index.html#webDev">Website Development</a></li>
-                        <li><a href="index.html#ads">Ads Service</a></li>
-                        </ul>
+                        <li><a href="#" data-lang="footer-link-s1">Live Shopping</a></li>
+                        <li><a href="#" data-lang="footer-link-s2">Manajemen Media Sosial</a></li>
+                        <li><a href="#" data-lang="footer-link-s3">Endorsement</a></li>
+                        <li><a href="#" data-lang="footer-link-s4">Solusi Enterprise</a></li>
+                    </ul>
                 </div>
 
                 <div class="col-lg-2 col-md-4 col-6">
-                    <h6 class="fw-bold mb-3">Mitra</h6>
+                    <h6 class="fw-bold mb-3" data-lang="footer-links-partners">Mitra</h6>
                     <ul class="list-unstyled footer-link-list">
-                        <li><a href="#">Content Creators</a></li>
-                        <li><a href="#">Streamers</a></li>
-                        <li><a href="#">Influencers</a></li>
+                        <li><a href="#" data-lang="footer-link-p1">Kreator Konten</a></li>
+                        <li><a href="#" data-lang="footer-link-p2">Streamer</a></li>
+                        <li><a href="#" data-lang="footer-link-p3">Influencer</a></li>
                     </ul>
                 </div>
 
                 <div class="col-lg-3 col-md-6">
-                    <h6 class="fw-bold mb-3">Informasi Kontak</h6>
+                    <h6 class="fw-bold mb-3" data-lang="footer-links-contact">Informasi Kontak</h6>
                     <ul class="list-unstyled footer-link-list">
-                        <li><a href="https://api.whatsapp.com/send?phone=6281311088288&text=Halo%20Tim%20Click%20Panda%2C%20Saya%20ingin%20tahu%20lebih%20banyak%20tentang%20solusi%20yang%20ditawarkan%20oleh%20kalian.%20Apa%20bisa%20di%20bantu%20jelaskan%3F " class="fs-6 mb-2"><i class="bi bi-whatsapp me-2"></i> +62 812-8767-2836</a></li>
-                        <li><a href="#" class="fs-6 mb-3"><i class="bi bi-instagram me-2"></i> clikpandaa</a></li>
-                        <li><a href="#" class="fs-6 mb-2"><i class="bi bi-facebook me-2"></i> Clik Panda</a></li>
-                        <li><a href="#" class="fs-6 mb-3"><i class="bi bi-tiktok me-2"></i> clik.panda</a></li>
+                        <li><a href="https://api.whatsapp.com/send?phone=6281311088288&text=Halo%20Tim%20Click%20Panda%2C%20Saya%20ingin%20tahu%20lebih%20banyak%20tentang%20solusi%20yang%20ditawarkan%20oleh%20kalian.%20Apa%20bisa%20di%20bantu%20jelaskan%3F " class="fs-6 mb-2"><i class="bi bi-whatsapp me-2"></i> <span data-lang="footer-contact-wa">+62 812-8767-2836</span></a></li>
+                        <li><a href="#" class="fs-6 mb-3"><i class="bi bi-instagram me-2"></i> <span data-lang="footer-contact-ig">clikPanda</span></a></li>
+                        <li><a href="#" class="fs-6 mb-2"><i class="bi bi-facebook me-2"></i> <span data-lang="footer-contact-fb">Clik Panda</span></a></li>
+                        <li><a href="#" class="fs-6 mb-3"><i class="bi bi-tiktok me-2"></i> <span data-lang="footer-contact-tt">clik.panda</span></a></li>
                     </ul>
                 </div>
             </div>
 
             <div class="text-center py-4 mt-5 border-top border-light border-opacity-25">
-                <small class="opacity-75">All Right Reserved 2025 © CV. Chokro Project</small>
+                <small class="opacity-75" data-lang="footer-copyright">All Right Reserved 2025 © CV. Chokro Project</small>
             </div>
 
         </div>
@@ -216,5 +227,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="panda-script.js" defer></script>
     </body>
 </html>

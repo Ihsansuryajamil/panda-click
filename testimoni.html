@@ -19,7 +19,9 @@
         <nav class="navbar navbar-expand-lg navbar-dark position-absolute w-100 pt-3">
             <div class="container">
                 <img src="assets/img/panda3_icon.png" alt="" style="width: 50px;margin-right: 10px;">
-                <a class="navbar-brand fw-bold fs-4" href="#">Click Panda</a>
+                <a class="navbar-brand fw-bold fs-4" href="index.html">
+                    <span style="color: #000;">Click</span> Panda
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -27,33 +29,33 @@
                     <ul class="navbar-nav mx-auto">
                         
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-lang="nav-services">
                                 Layanan Kami
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="index.html#liveShopping">Live Shopping</a></li>
-                                <li><a class="dropdown-item" href="index.html#webDev">Website Development</a></li>
-                                <li><a class="dropdown-item" href="index.html#ads">Ads Service</a></li>
+                                <li><a class="dropdown-item" href="index.html#liveShopping" data-lang="nav-live">Live Shopping</a></li>
+                                <li><a class="dropdown-item" href="index.html#webDev" data-lang="nav-webdev">Website Development</a></li>
+                                <li><a class="dropdown-item" href="index.html#ads" data-lang="nav-ads">Ads Service</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-lang="nav-testimoni">
                                 Testimoni
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="testimoni.html#tentangkami">Tentang Kami</a></li>
-                                <li><a class="dropdown-item" href="testimoni.html#partnerlive">Partner Live Shopping</a></li>
-                                <li><a class="dropdown-item" href="testimoni.html#testimoniads">Testimoni Ads</a></li>
+                                <li><a class="dropdown-item" href="testimoni.html#tentangkami" data-lang="nav-about">Tentang Kami</a></li>
+                                <li><a class="dropdown-item" href="testimoni.html#partnerlive" data-lang="nav-partner-live">Partner Live Shopping</a></li>
+                                <li><a class="dropdown-item" href="testimoni.html#testimoniads" data-lang="nav-testi-ads">Testimoni Ads</a></li>
                             </ul>
                         </li>
                         
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-lang="nav-contact">
                                 Kontak
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="contact.html">Informasi Kontak</a></li>
-                                <li><a class="dropdown-item" href="contact.html#socialmedia">Media Social</a></li>
+                                <li><a class="dropdown-item" href="contact.html" data-lang="nav-contact-info">Informasi Kontak</a></li>
+                                <li><a class="dropdown-item" href="contact.html#socialmedia" data-lang="nav-social">Media Social</a></li>
                             </ul>
                         </li>
                         <!-- <li class="nav-item dropdown">
@@ -62,15 +64,13 @@
                             </a>
                         </li> -->
                     </ul>
-                    
                     <div class="d-flex flex-column flex-lg-row align-items-center mt-3 mt-lg-0">
-                        <!-- <a href="#" class="btn btn-outline-light rounded-pill me-lg-2 px-4 mb-2 mb-lg-0 w-100 w-lg-auto">Masuk</a>
-                        <a href="#" class="btn btn-light rounded-pill me-lg-3 px-4 mb-3 mb-lg-0 w-100 w-lg-auto">Daftar</a> -->
                         <div class="d-flex lang-switcher">
-                            <a href="#" class="text-white text-decoration-none fw-bold">ID</a>
+                            <a href="#" class="text-white text-decoration-none fw-bold" id="lang-btn-id">ID</a>
                             <span class="text-white-50 mx-1">|</span>
-                            <a href="#" class="text-white-50 text-decoration-none">EN</a>
+                            <a href="#" class="text-white-50 text-decoration-none" id="lang-btn-en">EN</a>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -79,16 +79,25 @@
         <div class="container">
             <div class="row min-vh-100 align-items-center text-white">
                 <div class="col-lg-6">
-                    <h1 class="display-3 fw-bolder">Kenapa Click Panda?</h1>
-                    <p class="lead my-4">Mulailah terhubung dengan para pembuat konten profesional di dalam satu platform Social Bread. Sekarang saatnya untuk bisnis Anda dikenal oleh pasar yang lebih luas secara online.</p>
-                    <!-- <div class="d-flex">
-                        <a href="#" class="me-2"><img src="assets/img/googleplay_download.png" alt="Google Play" height="50"></a>
-                        <a href="#"><img src="assets/img/appstore_download.png" alt="App Store" height="50"></a>
-                    </div> -->
-                </div>
+                    
+                    <h1 class="display-3 fw-bolder" 
+                        data-lang="testimoni-hero-title">
+                        Kenapa Click Panda?
+                    </h1>
+                    
+                    <p class="lead my-4" 
+                    data-lang="testimoni-hero-subtitle">
+                    Mulailah terhubung dengan para pembuat konten profesional di dalam satu platform Click Panda. Sekarang saatnya untuk bisnis Anda dikenal oleh pasar yang lebih luas secara online.
+                    </p>
+
+                    </div>
                 <div class="col-lg-6 text-center d-none d-lg-block">
                     <div class="phones-placeholder">
-                        <h3 class="text-white-50">(Placeholder Gambar HP)</h3>
+                        
+                        <h3 class="text-white-50" 
+                            data-lang="testimoni-hero-placeholder">
+                            (Placeholder Gambar HP)
+                        </h3>
                     </div>
                 </div>
             </div>
@@ -102,18 +111,18 @@
     <section class="endorsement-section py-5" id="tentangkami">
         <div class="container">
             <div class="text-center col-lg-8 mx-auto mb-4">
-                <h5 class="text-main-green fw-bold">LAYANAN ENDORSEMENT</h5>
-                <p class="text-muted">Tingkatkan jangkauan dan kredibilitas brand anda dengan Layanan Endorsement kami. Memanfaatkan pengaruh dari suara tepercaya untuk meningkatkan produk dan layanan anda.</p>
-                <a href="#" class="btn btn-dark-green rounded-pill px-4 py-2 mt-2">Pelajari &rarr;</a>
+                <h5 class="text-main-green fw-bold" data-lang="testimoni-endorse-title">LAYANAN ENDORSEMENT</h5>
+                <p class="text-muted" data-lang="testimoni-endorse-desc">Tingkatkan jangkauan dan kredibilitas brand anda dengan Layanan Endorsement kami. Memanfaatkan pengaruh dari suara tepercaya untuk meningkatkan produk dan layanan anda.</p>
+                <a href="#" class="btn btn-dark-green rounded-pill px-4 py-2 mt-2" data-lang="testimoni-endorse-btn">Pelajari &rarr;</a>
             </div>
 
             <div class="row g-4">
                 <div class="col-lg-6">
                     <div class="card h-100 border-0 rounded-4 bg-light-gray p-4">
                         <div class="card-body">
-                            <h3 class="fw-bold mb-3">Siapa Kami?</h3>
-                            <p class="text-muted">Social Bread merupakan marketplace tepercaya yang menghubungkan kreator konten dengan pelaku bisnis dan merek lokal dan UKM dengan kehadiran digital kami.</p>
-                            <p class="text-muted mb-0">Bekerja sama dengan para kreator konten yang profesional dan andal, Social Bread siap membantu dan memberdayakan para bisnis dan merek lokal untuk dapat bersaing di dalam platform digital.</p>
+                            <h3 class="fw-bold mb-3" data-lang="testimoni-who-title">Siapa Kami?</h3>
+                            <p class="text-muted" data-lang="testimoni-who-desc1">Click Panda merupakan marketplace tepercaya yang menghubungkan kreator konten dengan pelaku bisnis dan merek lokal dan UKM dengan kehadiran digital kami.</p>
+                            <p class="text-muted mb-0" data-lang="testimoni-who-desc2">Bekerja sama dengan para kreator konten yang profesional dan andal, Click Panda siap membantu dan memberdayakan para bisnis dan merek lokal untuk dapat bersaing di dalam platform digital.</p>
                         </div>
                     </div>
                 </div>
@@ -130,9 +139,9 @@
                 <div class="col-lg-6">
                     <div class="card h-100 border-0 rounded-4 bg-light-gray p-4">
                         <div class="card-body">
-                            <h3 class="fw-bold mb-3">Apa yang Kami Lakukan?</h3>
-                            <p class="text-muted">Tim kami akan membantu Anda dalam memanfaatkan channels dan teknologi digital agar bisnis dapat mencapai tujuan marketing dan penjualan yang diinginkan.</p>
-                            <p class="text-muted mb-0">Berbekal alat data crawling engine dan para kreator konten terlatih, strategi penjualan bisnis Anda pun akan berjalan secara efisien dan efektif.</p>
+                            <h3 class="fw-bold mb-3" data-lang="testimoni-what-title">Apa yang Kami Lakukan?</h3>
+                            <p class="text-muted" data-lang="testimoni-what-desc1">Tim kami akan membantu Anda dalam memanfaatkan channels dan teknologi digital agar bisnis dapat mencapai tujuan marketing dan penjualan yang diinginkan.</p>
+                            <p class="text-muted mb-0" data-lang="testimoni-what-desc2">Berbekal alat data crawling engine dan para kreator konten terlatih, strategi penjualan bisnis Anda pun akan berjalan secara efisien dan efektif.</p>
                         </div>
                     </div>
                 </div>
@@ -143,8 +152,8 @@
         <div class="container">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6">
-                    <h2 class="fw-bolder mb-3">Kenapa Click Panda?</h2>
-                    <p class="text-muted mb-4">Pada era sekarang ini, Anda perlu mengoptimalkan pemasaran bisnis melalui media sosial dan inilah beberapa alasan mengapa Anda perlu bekerja sama dengan Click Panda.</p>
+                    <h2 class="fw-bolder mb-3" data-lang="testimoni-why-section-title">Kenapa Click Panda?</h2>
+                    <p class="text-muted mb-4" data-lang="testimoni-why-desc">Pada era sekarang ini, Anda perlu mengoptimalkan pemasaran bisnis melalui media sosial dan inilah beberapa alasan mengapa Anda perlu bekerja sama dengan Click Panda.</p>
 
                     <div class="placeholder-img rounded-4" style="height: 500px;">
                         (Placeholder Gambar)
@@ -154,20 +163,20 @@
                     
                     <div class="reason-box-wrapper">
                         <div class="reason-box">
-                            <h5 class="fw-bold mb-2">1. Tidak Repot</h5>
-                            <p class="text-muted mb-0">Biarkan kami yang mengelola konten media sosial Anda. Gunakan waktu Anda untuk fokus pada keperluan bisnis lainnya.</p>
+                            <h5 class="fw-bold mb-2" data-lang="testimoni-why-r1-title">1. Tidak Repot</h5>
+                            <p class="text-muted mb-0" data-lang="testimoni-why-r1-desc">Biarkan kami yang mengelola konten media sosial Anda. Gunakan waktu Anda untuk fokus pada keperluan bisnis lainnya.</p>
                         </div>
                         <div class="reason-box">
-                            <h5 class="fw-bold mb-2">2. Meningkatkan Penjualan</h5>
-                            <p class="text-muted mb-0">Media sosial yang aktif itu berarti merek anda dikenal oleh banyak audiens target sehingga potensi untuk meningkatkan penjualan lebih tinggi lagi.</p>
+                            <h5 class="fw-bold mb-2" data-lang="testimoni-why-r2-title">2. Meningkatkan Penjualan</h5>
+                            <p class="text-muted mb-0" data-lang="testimoni-why-r2-desc">Media sosial yang aktif itu berarti merek anda dikenal oleh banyak audiens target sehingga potensi untuk meningkatkan penjualan lebih tinggi lagi.</p>
                         </div>
                         <div class="reason-box">
-                            <h5 class="fw-bold mb-2">3. Kami Memberikan Hasil</h5>
-                            <p class="text-muted mb-0">Dengan memiliki konten kreator berpengalaman dan Pusat Kreatif sebagai sumber daya dan wawasan, kami pasti dapat membantu Anda untuk tetap relevan di platform media sosial</p>
+                            <h5 class="fw-bold mb-2" data-lang="testimoni-why-r3-title">3. Kami Memberikan Hasil</h5>
+                            <p class="text-muted mb-0" data-lang="testimoni-why-r3-desc">Dengan memiliki konten kreator berpengalaman dan Pusat Kreatif sebagai sumber daya dan wawasan, kami pasti dapat membantu Anda untuk tetap relevan di platform media sosial</p>
                         </div>
                         <div class="reason-box">
-                            <h5 class="fw-bold mb-2">4. Jaminan 100% Uang Kembali</h5>
-                            <p class="text-muted mb-0">Jika Anda tidak melihat dampak apa pun dari layanan kami, uang pembayaran akan dikembalikan, tanpa syarat.</p>
+                            <h5 class="fw-bold mb-2" data-lang="testimoni-why-r4-title">4. Jaminan 100% Uang Kembali</h5>
+                            <p class="text-muted mb-0" data-lang="testimoni-why-r4-desc">Jika Anda tidak melihat dampak apa pun dari layanan kami, uang pembayaran akan dikembalikan, tanpa syarat.</p>
                         </div>
                     </div>
                 </div>
@@ -178,8 +187,8 @@
     
     <section class="achievements-section py-5 bg-light-gray">
         <div class="container">
-            <h2 class="fw-bolder">Pencapaian Kami</h2>
-            <p class="text-muted col-lg-10 mb-5">Social Bread memiliki banyak pengalaman di dalam industri Digital Marketing & Creative dan telah bekerja sama dengan lebih dari 1500 pebisnis/merek lokal di Indonesia, seperti: Sour Sally, Gulu Gulu, Nyapii, Ventela, Kebab Turki Baba Rafi, Booga-Booga, dan masih banyak lagi. Seiring bertambahnya pengguna kami, begitu pula tim Social Bread juga terus berkembang.</p>
+            <h2 class="fw-bolder" data-lang="achieve-title">Pencapaian Kami</h2>
+            <p class="text-muted col-lg-10 mb-5" data-lang="achieve-desc">Click Panda memiliki banyak pengalaman di dalam industri Digital Marketing & Creative dan telah bekerja sama dengan lebih dari 1500 pebisnis/merek lokal di Indonesia, seperti: Sour Sally, Gulu Gulu, Nyapii, Ventela, Kebab Turki Baba Rafi, Booga-Booga, dan masih banyak lagi. Seiring bertambahnya pengguna kami, begitu pula tim Click Panda juga terus berkembang.</p>
 
             <div class="row gy-4">
                 <div class="col-lg-7">
@@ -187,32 +196,32 @@
                         <div class="col-md-6">
                             <div class="card stat-card border-0 rounded-4 p-3 text-white bg-dark-green">
                                 <div class="card-body d-flex align-items-center">
-                                    <span class="display-4 fw-bolder me-3">200+</span>
-                                    <span class="fs-5">Anggota Tim</span>
+                                    <span class="display-4 fw-bolder me-3" data-lang="achieve-s1-val">200+</span>
+                                    <span class="fs-5" data-lang="achieve-s1-text">Anggota Tim</span>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="card stat-card border-0 rounded-4 p-3 text-white bg-dark-green">
                                 <div class="card-body d-flex align-items-center">
-                                    <span class="display-4 fw-bolder me-3">150+</span>
-                                    <span class="fs-5">Partner & Host</span>
+                                    <span class="display-4 fw-bolder me-3" data-lang="achieve-s2-val">150+</span>
+                                    <span class="fs-5" data-lang="achieve-s2-text">Partner & Host</span>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="card stat-card border-0 rounded-4 p-3 text-white bg-dark-green">
                                 <div class="card-body d-flex align-items-center">
-                                    <span class="display-4 fw-bolder me-3">100+</span>
-                                    <span class="fs-5">Projek Berulang</span>
+                                    <span class="display-4 fw-bolder me-3" data-lang="achieve-s3-val">100+</span>
+                                    <span class="fs-5" data-lang="achieve-s3-text">Projek Berulang</span>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="card stat-card border-0 rounded-4 p-3 text-white bg-dark-green">
                                 <div class="card-body d-flex align-items-center">
-                                    <span class="display-4 fw-bolder me-3">30+</span>
-                                    <span class="fs-5">Projek Baru per Bulan</span>
+                                    <span class="display-4 fw-bolder me-3" data-lang="achieve-s4-val">30+</span>
+                                    <span class="fs-5" data-lang="achieve-s4-text">Projek Baru per Bulan</span>
                                 </div>
                             </div>
                         </div>
@@ -221,55 +230,70 @@
                 <div class="col-lg-5">
                     <div class="card h-100 border-0 rounded-4 p-4 text-white bg-dark-green">
                         <div class="card-body d-flex flex-column">
-                            <p class="fs-5">Total pendapatan yang dihasilkan</p>
+                            <p class="fs-5" data-lang="achieve-s5-title">Total pendapatan yang dihasilkan</p>
                             <p class="display-5 fw-bolder mb-3">IDR. 5.900.000.000 <i class="bi bi-arrow-up-short"></i></p>
-                            <p class="fs-5">Growth vs. 2022</p>
+                            <p class="fs-5" data-lang="achieve-s6-title">Growth vs. 2022</p>
                             <p class="display-5 fw-bolder mb-3">65.80% <i class="bi bi-arrow-up-short"></i></p>
-                            <p class="text-end fs-6 opacity-75 mt-auto mb-0">*Data statistik per 2023</p>
+                            <p class="text-end fs-6 opacity-75 mt-auto mb-0" data-lang="achieve-s7-note">*Data statistik per 2023</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
-    <section class="liveshopping-section py-5">
+    <section class="liveshopping-section py-5"  id="liveShopping">
         <div class="container">
-            <div class="text-center col-lg-8 mx-auto mb-4">
-                <h5 class="text-main-green fw-bold">Live Shopping Lite Shopee (Shopee Only)</h5>
-                <p class="text-muted">Evolusi bisnis terus bergerak ke arah digital, bisnis Anda pun harus ikut berevolusi! Mulai ubah strategi penjualan Anda dengan menerapkan fitur live shopping dalam platform digital.</p>
+            <div class="text-center col-lg-8 mx-auto mb-5">
+                <h5 class="text-main-green fw-bold" data-lang="services-live-title">Live Shopping Only (TikTok/Shopee)</h5>
+                <p class="text-muted" data-lang="services-live-desc">Dengan Live Shopping, Anda dapat meningkatkan kesadaran dan penjualan produk Anda. Paket ini memungkinkan Anda untuk berinteraksi dengan pelanggan secara real-time, meningkatkan kepercayaan dan kesadaran merek Anda.</p>
             </div>
 
             <div class="live-box p-5 text-white">
                 <div class="row align-items-center">
                     <div class="col-lg-7">
-                        <h2 class="fw-bold">Liveshopping Lite Shopee Only</h2>
-                        <p class="display-6 fw-bold my-3">Mulai dari <br> Rp 18.000.000,- <span class="fw-normal fs-5">(+5% sharing Revenue)</span></p>
-                        <p class="live-box-subtext mb-4">Make it more impactful With Ads Rp. 6.000.000 (include VAT & ads fee 20%)</p>
-
-                        <p class="fw-bold mb-1">Harga sudah termasuk:</p>
+                        <h2 class="fw-bold" data-lang="live-gold-title">Live Shopping Gold</h2>
+                        
+                        <p class="display-6 fw-bold my-3"> 
+                            <span class="fw-bold fs-5" data-lang="live-gold-price-prefix">Mulai dari </span><br> 
+                            <span data-lang="live-gold-price">Rp 18.000.000,-</span> 
+                            <span class="fw-normal fs-5" data-lang="live-gold-price-suffix"> / Bulan</span>
+                            <span class="text-warning fw-normal fs-5" data-lang="live-gold-promo"> (Promo Diskon 20%)</span>
+                        </p>
+                        
+                        <p class="fw-bold mb-1" data-lang="live-gold-features">Fitur:</p>
                         <ul class="list-unstyled live-list">
-                            <li>Total 8 Jam/hari (Live Basic atau Premium 2 Jam / hari & Live Lite Shopee 6 Jam / hari). Total 26 hari dalam sebulan.</li>
-                            <li>Tax 1,1%, Smartphone, Wifi, Standard Property & equipment.</li>
-                            <li>Host & Relations Manager untuk membantu sesi live shopping brand Anda.</li>
-                            <li>Optimizing Marketplace (Register campaign, optimize SEO, overview account health)</li>
+                            <li data-lang="live-gold-f1">Akun TikTok disediakan</li>
+                            <li data-lang="live-gold-f2">Live TikTok durasi 4 - 6 jam setiap hari.</li>
+                            <li data-lang="live-gold-f3">Talent Host (Berpengalaman, Interaktif, Push Closing)</li>
+                            <li data-lang="live-gold-f4">Crew Support ( Teknis Kontrol Live & Kreatif Konten)</li>
+                            <li data-lang="live-gold-f5">Konten Planner 1 Video / Hari (30 Video / Bulan)</li>
+                            <li data-lang="live-gold-f6">Upload konten setiap hari (Termasuk hari Minggu/Tanggal Merah).</li>
+                            <li data-lang="live-gold-f7">Studio Set Up dengan Dekorasi Brand</li>
+                            <li data-lang="live-gold-f8">Strategi Live dengan Set Up Promo / Campaign</li>
+                            <li data-lang="live-gold-f9">Optimasi Google Ads ( Exclude Budget )</li>
+                            <li data-lang="live-gold-f10">Optimasi Live Penjualan & Traffic</li>
+                            <li data-lang="live-gold-f11">Growth Follower Setiap Bulan</li>
+                            <li data-lang="live-gold-f12">Brand Awareness</li>
+                            <li data-lang="live-gold-f13">Optimasi Live</li>
                         </ul>
 
-                        <p class="fw-bold mb-1 mt-4">T&C:</p>
+                        <p class="fw-bold mb-1 mt-4" data-lang="live-gold-tnc">T&C:</p>
                         <ul class="list-unstyled live-list">
-                            <li>Live Lite Shopee menjaga toko Anda tetap terlihat dan relevan di Shopee dengan fitur sederhana namun efektif.</li>
-                            <li>Paket ini dikhususkan untuk Anda yang melakukan Live Shopping di marketplace Shopee.</li>
+                            <li data-lang="live-gold-t1">Live Shopping Gold menjaga toko Anda tetap terlihat dan relevan di Tiktok & Shopee dengan fitur sederhana namun efektif.</li>
+                            <li data-lang="live-gold-t2">Paket ini dikhususkan untuk Anda yang melakukan Live Shopping di marketplace Tiktok & Shopee</li>
                         </ul>
                     </div>
 
                     <div class="col-lg-5 text-center mt-4 mt-lg-0">
-                        <div style="height: 300px;">(Placeholder Gambar)</div>
-                        <a href="https://api.whatsapp.com/send?phone=6281311088288&text=Halo%20Tim%20Click%20Panda%2C%20Saya%20ingin%20tahu%20lebih%20banyak%20tentang%20solusi%20yang%20ditawarkan%20oleh%20kalian.%20Apa%20bisa%20di%20bantu%20jelaskan%3F " class="btn btn-outline-light rounded-pill px-5 py-2 mt-4 fs-5">Hubungi kami &rarr;</a>
+                        
+                        <img src="assets/img/gambar5.png" alt="Live Shopping Click Panda" class="img-fluid" style="max-height: 450px;">
+                        
+                        <a href="https://api.whatsapp.com/send?phone=628131088288&text=Halo%20Tim%20Click%20Panda%2C%20Saya%20ingin%20tahu%20lebih%20banyak%20tentang%20solusi%20yang%20ditawarkan%20oleh%20kalian.%20Apa%20bisa%20di%20bantu%20jelaskan%3F " class="btn btn-outline-light rounded-pill px-5 py-2 mt-4 fs-5" data-lang="live-gold-btn">Hubungi kami &rarr;</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="testimonial-section py-5 bg-light-gray" id="partnerlive">
+    <!-- <section class="testimonial-section py-5 bg-light-gray" id="partnerlive">
         <div class="container">
             <h2 class="fw-bold text-main-green mb-4">Apa pemikiran mereka tentang kami?</h2>
             
@@ -319,25 +343,25 @@
                 <div class="testimonial-nav-next"><i class="bi bi-chevron-right"></i></div>
             </div>
         </div>
-    </section>
+    </section> -->
     <section class="partners-section py-5" id="testimoniads">
         <div class="container">
             
-            <h6 class="text-main-green fw-bold text-center mb-4">TESTIMONI LAYANAN LIVE SHOPPING</h6>
+            <h6 class="text-main-green fw-bold text-center mb-4" data-lang="testi-live-title">TESTIMONI LAYANAN LIVE SHOPPING</h6>
             <div class="row justify-content-center mb-5">
                 <div class="col-lg-3">
                     
                     <div class="testimonial-ads-card" id="static-testi-card">
                         <img src="assets/img/testimoni/mitra live shopping.jpg" alt="Testimoni Mitra Live Shopping" class="img-fluid">
                         <div class="testimonial-ads-overlay">
-                            <h6 class="fw-bold">Mitra Live Shopping</h6>
-                            <p class="small mb-0">Klien partner yang sukses live shopping bersama kami.</p>
+                            <h6 class="fw-bold" data-lang="testi-live-card-title">Mitra Live Shopping</h6>
+                            <p class="small mb-0" data-lang="testi-live-card-desc">Klien partner yang sukses live shopping bersama kami.</p>
                         </div>
                     </div>
-                    </div>
+                </div>
             </div>
 
-            <h6 class="text-main-green fw-bold text-center mt-5 mb-4">TESTIMONI LAYANAN ADS (GOOGLE/TIKTOK)</h6>
+            <h6 class="text-main-green fw-bold text-center mt-5 mb-4" data-lang="testi-ads-title">TESTIMONI LAYANAN ADS (GOOGLE/TIKTOK)</h6>
             
             <div class="swiper ads-testimonial-swiper position-relative pb-4">
                 <div class="swiper-wrapper">
@@ -346,8 +370,8 @@
                         <div class="testimonial-ads-card">
                             <img src="assets/img/testimoni/1.png" alt="Testimoni Ads 1" class="img-fluid">
                             <div class="testimonial-ads-overlay">
-                                <h6 class="fw-bold">Brand Fashion A</h6>
-                                <p class="small mb-0">"ROAS meningkat 300% dalam 1 bulan!"</p>
+                                <h6 class="fw-bold" data-lang="testi-ads-1-title">PT. BBS Taxi Service</h6>
+                                <p class="small mb-0" data-lang="testi-ads-1-desc">"Fokus iklan pada paket wisata mangrove sangat sukses menarik pemesan dari kalangan turis. Peningkatan pemanfaatan jasa taxi air kami sangat terasa!"</p>
                             </div>
                         </div>
                     </div>
@@ -356,8 +380,8 @@
                         <div class="testimonial-ads-card">
                             <img src="assets/img/testimoni/2.png" alt="Testimoni Ads 2" class="img-fluid">
                             <div class="testimonial-ads-overlay">
-                                <h6 class="fw-bold">Kuliner B</h6>
-                                <p class="small mb-0">"Penjualan harian naik 2x lipat. Terima kasih Click Panda."</p>
+                                <h6 class="fw-bold" data-lang="testi-ads-2-title">ERA Real Estate (Fiesta)</h6>
+                                <p class="small mb-0" data-lang="testi-ads-2-desc">"Iklan rumah mewah ini langsung menarik prospek berdaya beli tinggi. Kami sangat puas dengan kualitas lead yang didapatkan melalui kampanye ini."</p>
                             </div>
                         </div>
                     </div>
@@ -366,8 +390,8 @@
                         <div class="testimonial-ads-card">
                             <img src="assets/img/testimoni/3.png" alt="Testimoni Ads 3" class="img-fluid">
                             <div class="testimonial-ads-overlay">
-                                <h6 class="fw-bold">Jasa C</h6>
-                                <p class="small mb-0">"Lead berkualitas masuk terus setiap hari."</p>
+                                <h6 class="fw-bold" data-lang="testi-ads-3-title">Bintan Paradise Spa</h6>
+                                <p class="small mb-0" data-lang="testi-ads-3-desc">"Iklan dengan visual kayak di laguna yang menawan menarik lebih banyak wisatawan ke Bintan. Reservasi dan kunjungan ke spa mengalami peningkatan yang signifikan."</p>
                             </div>
                         </div>
                     </div>
@@ -376,8 +400,8 @@
                         <div class="testimonial-ads-card">
                             <img src="assets/img/testimoni/4.png" alt="Testimoni Ads 4" class="img-fluid">
                             <div class="testimonial-ads-overlay">
-                                <h6 class="fw-bold">Skincare D</h6>
-                                <p class="small mb-0">"Brand awareness kami meningkat pesat."</p>
+                                <h6 class="fw-bold" data-lang="testi-ads-4-title">Richie Farm</h6>
+                                <p class="small mb-0" data-lang="testi-ads-4-desc">"Promosi website yang sangat efektif mendatangkan pembeli dan kolektor ikan Discus. Penjualan ke berbagai kota meningkat"</p>
                             </div>
                         </div>
                     </div>
@@ -386,8 +410,8 @@
                         <div class="testimonial-ads-card">
                             <img src="assets/img/testimoni/5.png" alt="Testimoni Ads 5" class="img-fluid">
                             <div class="testimonial-ads-overlay">
-                                <h6 class="fw-bold">Brand E</h6>
-                                <p class="small mb-0">"Timnya sangat suportif dan strateginya jitu!"</p>
+                                <h6 class="fw-bold" data-lang="testi-ads-5-title">Richie Farm</h6>
+                                <p class="small mb-0" data-lang="testi-ads-5-desc">"Promosi website yang sangat efektif mendatangkan pembeli dan kolektor ikan Discus. Penjualan ke berbagai kota meningkat"</p>
                             </div>
                         </div>
                     </div>
@@ -396,8 +420,8 @@
                         <div class="testimonial-ads-card">
                             <img src="assets/img/testimoni/6.png" alt="Testimoni Ads 6" class="img-fluid">
                             <div class="testimonial-ads-overlay">
-                                <h6 class="fw-bold">Gadget F</h6>
-                                <p class="small mb-0">"Target penjualan campaign bulanan terlampaui."</p>
+                                <h6 class="fw-bold" data-lang="testi-ads-6-title">ISKO Furniture</h6>
+                                <p class="small mb-0" data-lang="testi-ads-6-desc">"Visual iklan yang estetis berhasil meningkatkan ketertarikan pada furnitur kayu kami. Traffic ke toko online melonjak, dan penjualan set meja makan laris manis!"</p>
                             </div>
                         </div>
                     </div>
@@ -406,8 +430,8 @@
                         <div class="testimonial-ads-card">
                             <img src="assets/img/testimoni/7.png" alt="Testimoni Ads 7" class="img-fluid">
                             <div class="testimonial-ads-overlay">
-                                <h6 class="fw-bold">Otomotif G</h6>
-                                <p class="small mb-0">"CTR tinggi dengan budget yang efisien."</p>
+                                <h6 class="fw-bold" data-lang="testi-ads-7-title">Teva</h6>
+                                <p class="small mb-0" data-lang="testi-ads-7-desc">"Iklan Teva berhasil menangkap esensi petualangan dan kenyamanan. Kampanye ini sangat efektif meningkatkan klik dan konversi untuk produk sandal terbaru kami."</p>
                             </div>
                         </div>
                     </div>
@@ -416,8 +440,8 @@
                         <div class="testimonial-ads-card">
                             <img src="assets/img/testimoni/8.png" alt="Testimoni Ads 8" class="img-fluid">
                             <div class="testimonial-ads-overlay">
-                                <h6 class="fw-bold">Brand H</h6>
-                                <p class="small mb-0">"Penjelasannya detail dan mudah dipahami."</p>
+                                <h6 class="fw-bold" data-lang="testi-ads-8-title">MITRA RENT</h6>
+                                <p class="small mb-0" data-lang="testi-ads-8-desc">"Berkat iklan yang terarah, permintaan sewa untuk acara dan festival besar seperti Festival melonjak. Layanan iklan Anda benar-benar menjadi 'mitra' bisnis kami!"</p>
                             </div>
                         </div>
                     </div>
@@ -426,8 +450,8 @@
                         <div class="testimonial-ads-card">
                             <img src="assets/img/testimoni/9.png" alt="Testimoni Ads 9" class="img-fluid">
                             <div class="testimonial-ads-overlay">
-                                <h6 class="fw-bold">Kecantikan I</h6>
-                                <p class="small mb-0">"Sangat profesional dan hasilnya memuaskan."</p>
+                                <h6 class="fw-bold" data-lang="testi-ads-9-title">cactoast</h6>
+                                <p class="small mb-0" data-lang="testi-ads-9-desc">"Desain kami viral dan ramai dibicarakan. Penjualan harian naik berkali-kali lipat dalam waktu singkat!"</p>
                             </div>
                         </div>
                     </div>
@@ -436,8 +460,8 @@
                         <div class="testimonial-ads-card">
                             <img src="assets/img/testimoni/10.png" alt="Testimoni Ads 10" class="img-fluid">
                             <div class="testimonial-ads-overlay">
-                                <h6 class="fw-bold">Brand J</h6>
-                                <p class="small mb-0">"Akhirnya menemukan partner ads yang tepat."</p>
+                                <h6 class="fw-bold" data-lang="testi-ads-10-title">Bintan Paradise Spa</h6>
+                                <p class="small mb-0" data-lang="testi-ads-10-desc">"Iklan dengan visual kayak di laguna yang menawan menarik lebih banyak wisatawan ke Bintan. Reservasi dan kunjungan ke spa mengalami peningkatan yang signifikan."</p>
                             </div>
                         </div>
                     </div>
@@ -447,8 +471,8 @@
                             <div class="testimonial-ads-card">
                                 <img src="assets/img/testimoni/11.png" alt="Testimoni Ads 11" class="img-fluid">
                                 <div class="testimonial-ads-overlay">
-                                    <h6 class="fw-bold">F&B K</h6>
-                                    <p class="small mb-0">"Repeat order dari customer baru meningkat."</p>
+                                    <h6 class="fw-bold" data-lang="testi-ads-11-title">ZO® Skin Health</h6>
+                                    <p class="small mb-0" data-lang="testi-ads-11-desc">"Strategi iklan yang berkelas berhasil menjangkau target pasar premium kami. Peningkatan pada brand awareness dan konversi untuk produk Renewal Crème terlihat jelas."</p>
                                 </div>
                             </div>
                         </div>
@@ -458,8 +482,8 @@
                         <div class="testimonial-ads-card">
                             <img src="assets/img/testimoni/12.png" alt="Testimoni Ads 12" class="img-fluid">
                             <div class="testimonial-ads-overlay">
-                                <h6 class="fw-bold">Brand L</h6>
-                                <p class="small mb-0">"Rekomendasi campaign-nya selalu relevan."</p>
+                                <h6 class="fw-bold" data-lang="testi-ads-12-title">CIAMSO</h6>
+                                <p class="small mb-0" data-lang="testi-ads-12-desc">"Iklan yang mempromosikan Mie dan Kopi jadul berhasil menarik pengunjung baru ke kedai kami. Konsep dan keunikan CIAMSO kini lebih dikenal luas."</p>
                             </div>
                         </div>
                     </div>
@@ -468,8 +492,8 @@
                         <div class="testimonial-ads-card">
                             <img src="assets/img/testimoni/13.png" alt="Testimoni Ads 13" class="img-fluid">
                             <div class="testimonial-ads-overlay">
-                                <h6 class="fw-bold">Properti M</h6>
-                                <p class="small mb-0">"Data reportnya sangat lengkap dan transparan."</g>
+                                <h6 class="fw-bold" data-lang="testi-ads-13-title">Kedai Ladjoe</h6>
+                                <p class="small mb-0" data-lang="testi-ads-13-desc">"Iklan untuk spesial nasi maranggi kami sangat menggugah selera dan berhasil menarik banyak pelanggan baru. Peningkatan penjualan saat jam makan siang sangat signifikan!"</p>
                             </div>
                         </div>
                     </div>
@@ -478,8 +502,8 @@
                         <div class="testimonial-ads-card">
                             <img src="assets/img/testimoni/14.png" alt="Testimoni Ads 14" class="img-fluid">
                             <div class="testimonial-ads-overlay">
-                                <h6 class="fw-bold">Brand N</h6>
-                                <p class="small mb-0">"Servisnya bintang 5! Sangat responsif."</p>
+                                <h6 class="fw-bold" data-lang="testi-ads-14-title">CIAMSO</h6>
+                                <p class="small mb-0" data-lang="testi-ads-14-desc">"Iklan yang mempromosikan Mie dan Kopi jadul berhasil menarik pengunjung baru ke kedai kami. Konsep dan keunikan CIAMSO kini lebih dikenal luas."</p>
                             </div>
                         </div>
                     </div>
@@ -490,14 +514,15 @@
 
         </div>
     </section>
+    
     <footer class="footer-section bg-dark-green text-white pt-5">
         <div class="container">
             <div class="row justify-content-between align-items-center">
                 <div class="col-md-7">
-                    <h1 class="display-4 fw-bolder">Anda Memiliki Pertanyaan?</h1>
+                    <h1 class="display-4 fw-bolder" data-lang="footer-cta-title">Anda Memiliki Pertanyaan?</h1>
                 </div>
                 <div class="col-md-5 text-md-end mt-3 mt-md-0">
-                    <a href="https://api.whatsapp.com/send?phone=6281311088288&text=Halo%20Tim%20Click%20Panda%2C%20Saya%20ingin%20tahu%20lebih%20banyak%20tentang%20solusi%20yang%20ditawarkan%20oleh%20kalian.%20Apa%20bisa%20di%20bantu%20jelaskan%3F " class="btn btn-outline-light rounded-pill px-4 py-2 fs-5">Hubungi kami &rarr;</a>
+                    <a href="https://api.whatsapp.com/send?phone=6281311088288&text=Halo%20Tim%20Click%20Panda%2C%20Saya%20ingin%20tahu%20lebih%20banyak%20tentang%20solusi%20yang%20ditawarkan%20oleh%20kalian.%20Apa%20bisa%20di%20bantu%20jelaskan%3F " class="btn btn-outline-light rounded-pill px-4 py-2 fs-5" data-lang="footer-cta-btn">Hubungi kami &rarr;</a>
                 </div>
             </div>
 
@@ -506,75 +531,48 @@
             <div class="row gy-4">
                 <div class="col-lg-4">
                     
-                    <h3 class="fw-bold mb-3"><img src="assets/img/panda3_icon.png" alt="" style="width: 50px;margin-right: 10px;">Click Panda</h3>
-                    <p class="fs-6 opacity-75">
+                    <h3 class="fw-bold mb-3"><img src="assets/img/panda3_icon.png" alt="" style="width: 50px;margin-right: 10px;"><span style="color: #000;">Click</span> Panda</h3>
+                    
+                    <p class="fs-6 opacity-75" data-lang="footer-address">
                         - Ruko DUTA GARDEN SQUARE A15<br>
                         - Jl. Husein Sastranegara,
-                         Jurumudi, Kecamatan Benda,
+                        Jurumudi, Kecamatan Benda,
                         Kota Tangerang, Banten 15124.
                     </p>
                 </div>
 
                 <div class="col-lg-3 col-md-4 col-6">
-                    <h6 class="fw-bold mb-3">Layanan</h6>
+                    <h6 class="fw-bold mb-3" data-lang="footer-links-services">Layanan</h6>
                     <ul class="list-unstyled footer-link-list">
-                        <li><a href="#">Live Shopping</a></li>
-                        <li><a href="#">Social Media Management</a></li>
-                        <li><a href="#">Endorsement</a></li>
-                        <li><a href="#">Enterprise Solution</a></li>
+                        <li><a href="#" data-lang="footer-link-s1">Live Shopping</a></li>
+                        <li><a href="#" data-lang="footer-link-s2">Manajemen Media Sosial</a></li>
+                        <li><a href="#" data-lang="footer-link-s3">Endorsement</a></li>
+                        <li><a href="#" data-lang="footer-link-s4">Solusi Enterprise</a></li>
                     </ul>
                 </div>
 
                 <div class="col-lg-2 col-md-4 col-6">
-                    <h6 class="fw-bold mb-3">Mitra</h6>
+                    <h6 class="fw-bold mb-3" data-lang="footer-links-partners">Mitra</h6>
                     <ul class="list-unstyled footer-link-list">
-                        <li><a href="#">Content Creators</a></li>
-                        <li><a href="#">Streamers</a></li>
-                        <li><a href="#">Influencers</a></li>
+                        <li><a href="#" data-lang="footer-link-p1">Kreator Konten</a></li>
+                        <li><a href="#" data-lang="footer-link-p2">Streamer</a></li>
+                        <li><a href="#" data-lang="footer-link-p3">Influencer</a></li>
                     </ul>
                 </div>
 
-                <!-- <div class="col-lg-2 col-md-4 col-6">
-                    <h6 class="fw-bold mb-3">Lainnya</h6>
-                    <ul class="list-unstyled footer-link-list">
-                        <li><a href="#">Tentang Kami</a></li>
-                        <li><a href="#">Agenda</a></li>
-                        <li><a href="#">Pers</a></li>
-                        <li><a href="#">Tim Kami</a></li>
-                        <li><a href="#">Karir</a></li>
-                        <li><a href="#">Pusat Bantuan</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms and Conditions</a></li>
-                    </ul>
-                </div> -->
-
                 <div class="col-lg-3 col-md-6">
-                    <h6 class="fw-bold mb-3">Informasi Kontak</h6>
+                    <h6 class="fw-bold mb-3" data-lang="footer-links-contact">Informasi Kontak</h6>
                     <ul class="list-unstyled footer-link-list">
-                        <li><a href="https://api.whatsapp.com/send?phone=6281311088288&text=Halo%20Tim%20Click%20Panda%2C%20Saya%20ingin%20tahu%20lebih%20banyak%20tentang%20solusi%20yang%20ditawarkan%20oleh%20kalian.%20Apa%20bisa%20di%20bantu%20jelaskan%3F " class="fs-6 mb-2"><i class="bi bi-whatsapp me-2"></i> +62 812-8767-2836</a></li>
-                        <li><a href="#" class="fs-6 mb-3"><i class="bi bi-instagram me-2"></i> clikpandaa</a></li>
-                        <li><a href="#" class="fs-6 mb-2"><i class="bi bi-facebook me-2"></i> Clik Panda</a></li>
-                        <li><a href="#" class="fs-6 mb-3"><i class="bi bi-tiktok me-2"></i> clik.panda</a></li>
+                        <li><a href="https://api.whatsapp.com/send?phone=6281311088288&text=Halo%20Tim%20Click%20Panda%2C%20Saya%20ingin%20tahu%20lebih%20banyak%20tentang%20solusi%20yang%20ditawarkan%20oleh%20kalian.%20Apa%20bisa%20di%20bantu%20jelaskan%3F " class="fs-6 mb-2"><i class="bi bi-whatsapp me-2"></i> <span data-lang="footer-contact-wa">+62 812-8767-2836</span></a></li>
+                        <li><a href="#" class="fs-6 mb-3"><i class="bi bi-instagram me-2"></i> <span data-lang="footer-contact-ig">clikPanda</span></a></li>
+                        <li><a href="#" class="fs-6 mb-2"><i class="bi bi-facebook me-2"></i> <span data-lang="footer-contact-fb">Clik Panda</span></a></li>
+                        <li><a href="#" class="fs-6 mb-3"><i class="bi bi-tiktok me-2"></i> <span data-lang="footer-contact-tt">clik.panda</span></a></li>
                     </ul>
-                    
-                    
-                    
-                    
-                    
-                    <!-- <div class="footer-social-icons fs-4 mb-3">
-                        <a href="#"><i class="bi bi-instagram"></i></a>
-                        <a href="#"><i class="bi bi-tiktok"></i></a>
-                        <a href="#"><i class="bi bi-linkedin"></i></a>
-                    </div> -->
-                    
-                    <!-- <a href="#" class="d-block mb-2"><img src="assets/img/appstore_download.png" alt="App Store" class="img-fluid" style="max-height: 40px;"></a>
-                    <a href="#" class="d-block"><img src="assets/img/googleplay_download.png" alt="Google Play" class="img-fluid" style="max-height: 40px;"></a> -->
                 </div>
             </div>
 
             <div class="text-center py-4 mt-5 border-top border-light border-opacity-25">
-                <small class="opacity-75">All Right Reserved 2025 © CV. Chokro Project</small>
+                <small class="opacity-75" data-lang="footer-copyright">All Right Reserved 2025 © CV. Chokro Project</small>
             </div>
 
         </div>
@@ -584,6 +582,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <script src="script.js"></script>
 
     <script>
       var swiperTestimonial = new Swiper(".testimonial-swiper", {
@@ -637,5 +637,97 @@
       });
     </script>
 
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const langIdButton = document.getElementById('lang-id');
+        const langEnButton = document.getElementById('lang-en');
+        const translatableElements = document.querySelectorAll('[data-lang-id]');
+
+        function setLanguage(lang) {
+            // Validasi input
+            if (lang !== 'id' && lang !== 'en') {
+                console.error('Invalid language:', lang);
+                return; // Keluar jika bahasa tidak valid
+            }
+
+            translatableElements.forEach(el => {
+                const translation = el.dataset['lang' + lang]; // e.g., el.dataset.langid or el.dataset.langen
+                // Hanya ubah jika terjemahan ada
+                if (translation !== undefined) {
+                    // Cek jika elemen adalah input/textarea, gunakan .value
+                    if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+                        // Jika punya placeholder, ubah placeholder
+                        if (el.placeholder) {
+                            el.placeholder = translation;
+                        } else {
+                            el.value = translation;
+                        }
+                    } 
+                    // Cek jika elemen adalah title
+                    else if (el.tagName === 'TITLE') {
+                        document.title = translation; // Ubah title dokumen
+                    }
+                    // Untuk elemen lain, gunakan textContent
+                    else {
+                        el.textContent = translation;
+                    }
+                } else {
+                    // Optional: Log elemen mana yang tidak punya terjemahan untuk bahasa yg dipilih
+                    // console.warn('Translation not found for element:', el, 'Lang:', lang);
+                }
+            });
+
+            // Update active state for buttons
+            if (lang === 'id') {
+                langIdButton.classList.add('fw-bold', 'text-white');
+                langIdButton.classList.remove('text-white-50');
+                langEnButton.classList.remove('fw-bold', 'text-white');
+                langEnButton.classList.add('text-white-50');
+            } else { // lang === 'en'
+                langEnButton.classList.add('fw-bold', 'text-white');
+                langEnButton.classList.remove('text-white-50');
+                langIdButton.classList.remove('fw-bold', 'text-white');
+                langIdButton.classList.add('text-white-50');
+            }
+
+            // Save preference to localStorage
+            try {
+                localStorage.setItem('preferredLanguage', lang);
+            } catch (e) {
+                console.error('Failed to save language preference:', e);
+            }
+
+             // Update html lang attribute
+             document.documentElement.lang = lang;
+        }
+
+        // --- Event Listeners ---
+        langIdButton.addEventListener('click', (e) => {
+            e.preventDefault(); // Prevent page jump
+            setLanguage('id');
+        });
+
+        langEnButton.addEventListener('click', (e) => {
+            e.preventDefault(); // Prevent page jump
+            setLanguage('en');
+        });
+
+        // --- Initial Load ---
+        let preferredLanguage = 'id'; // Default language
+        try {
+            const savedLang = localStorage.getItem('preferredLanguage');
+            if (savedLang === 'en') { // Hanya set 'en' jika tersimpan, selain itu default ke 'id'
+                preferredLanguage = 'en';
+            }
+        } catch (e) {
+            console.error('Failed to retrieve language preference:', e);
+        }
+        
+        // Apply the language on load
+        setLanguage(preferredLanguage);
+    });
+</script>
+
+    <script src="panda-script.js" defer></script>
 </body>
 </html>

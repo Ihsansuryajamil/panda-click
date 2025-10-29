@@ -61,37 +61,40 @@ document.addEventListener('DOMContentLoaded', function() {
         'services-premium-desc': { id: 'Paket Live Shopping lainnya..', en: 'Other Live Shopping packages..' },
         // Silver
         'live-silver-title': { id: 'PAKET SILVER', en: 'SILVER PACKAGE' },
-        'live-silver-price': { id: 'IDR 12.000.000', en: 'IDR 12,000,000' },
+        'live-silver-price': { id: 'IDR 10.000.000', en: 'IDR 10,000,000' }, // Harga baru
         'live-silver-price-suffix': { id: '/ Bulan', en: '/ Month' },
-        'live-silver-promo': { id: '(Promo 3 Bulan Diskon 50%)', en: '(3 Month Promo 50% Discount)' },
-        'live-silver-f0': { id: '* 5%- 20% Sharing revenue per month', en: '* 5%- 20% Sharing revenue per month' },
-        'live-silver-f1': { id: 'Akun Dari Pemilik Brand', en: 'Account From Brand Owner' },
-        'live-silver-f2': { id: 'Talent Host (Berpengalaman, Interaktif, Push Closing)', en: 'Talent Host (Experienced, Interactive, Push Closing)' },
-        'live-silver-f3': { id: 'Crew Support ( Teknis Kontrol Live & Kreatif Konten)', en: 'Crew Support (Technical Live Control & Content Creative)' },
-        'live-silver-f4': { id: 'Konten Creator Planner: 1 Video / Hari', en: 'Content Creator Planner: 1 Video / Day' },
-        'live-silver-f5': { id: 'Upload konten setiap hari', en: 'Upload content every day' },
-        'live-silver-f6': { id: 'Admin Upload ke semua platform', en: 'Admin Upload to all platforms' },
-        'live-silver-f7': { id: 'Studio Set Up (Full equipment)', en: 'Studio Set Up (Full equipment)' },
-        'live-silver-f8': { id: 'Strategi Live dengan Set Up Promo / Campaign', en: 'Live Strategy with Promo / Campaign Set Up' },
-        'live-silver-f9': { id: 'Optimasi Live Penjualan & Traffic', en: 'Live Sales & Traffic Optimization' },
-        'live-silver-f10': { id: 'Growth Follower & Brand Awareness', en: 'Follower Growth & Brand Awareness' },
-        'live-silver-f11': { id: 'Optimasi Ads ( Exclude Budget )', en: 'Ads Optimization (Exclude Budget)' },
-        'live-silver-f12': { id: 'Optimasi Live', en: 'Live Optimization' },
-        //... (dan seterusnya untuk semua fitur silver)
-        'live-btn-contact': { id: 'HUBUNGI KAMI &rarr;', en: 'CONTACT US &rarr;' },
-        // Platinum
+        'live-silver-promo': { id: '(Promo Diskon 20%)', en: '(20% Discount Promo)' }, // Promo baru
+        // f0 Dihapus
+        'live-silver-f1': { id: 'Akun TikTok disediakan', en: 'TikTok Account provided' }, // Mulai dari sini fitur baru
+        'live-silver-f2': { id: 'Live TikTok durasi 2 - 4 jam setiap hari', en: 'Live TikTok 2 - 4 hours duration every day' },
+        'live-silver-f3': { id: 'Talent Host (Berpengalaman, Interaktif, Push Closing)', en: 'Talent Host (Experienced, Interactive, Push Closing)' },
+        'live-silver-f4': { id: 'Crew Support (Teknis Kontrol Live, Kreatif Konten).', en: 'Crew Support (Technical Live Control, Content Creative).' },
+        'live-silver-f5': { id: 'Konten Creator Planner: 1 Video / Hari (25 Video / Bulan).', en: 'Content Creator Planner: 1 Video / Day (25 Videos / Month).' },
+        'live-silver-f6': { id: 'Admin Upload ke platform', en: 'Admin Upload to platform' },
+        'live-silver-f7': { id: 'Studio Set Up (Full equipment).', en: 'Studio Set Up (Full equipment).' },
+        'live-silver-f8': { id: 'Strategi Live (Script Selling, Jam Prime Time).', en: 'Live Strategy (Selling Script, Prime Time Hours).' },
+        'live-silver-f9': { id: 'Laporan Mingguan (Penjualan, Traffic).', en: 'Weekly Report (Sales, Traffic).' },
+        'live-silver-f10': { id: 'Growth Follower & Brand Awareness.', en: 'Follower Growth & Brand Awareness.' },
+        // f11 & f12 Dihapus
+        
+        // Platinum (Fitur Diperbarui)
         'live-platinum-title': { id: 'PAKET PLATINUM', en: 'PLATINUM PACKAGE' },
         'live-platinum-price': { id: 'IDR 12.000.000', en: 'IDR 12,000,000' },
         'live-platinum-price-suffix': { id: '/ Bulan', en: '/ Month' },
         'live-platinum-promo': { id: '(Promo 3 Bulan Diskon 50%)', en: '(3 Month Promo 50% Discount)' },
-        'live-platinum-f1': { id: 'Akun Dari Pemilik Brand', en: 'Account From Brand Owner' },
-        'live-platinum-f2': { id: 'Agency Dapat Komisi 5 - 20% (Revenue Share)', en: 'Agency Gets 5 - 20% Commission (Revenue Share)' },
-        'live-platinum-f3': { id: 'Agency Urus Host & Crew', en: 'Agency Manages Host & Crew' },
-        'live-platinum-f4': { id: 'Studio Set Up dengan Dekorasi Brand', en: 'Studio Set Up with Brand Decoration' },
-        'live-platinum-f5': { id: 'Optimasi Konten & Ads', en: 'Content & Ads Optimization' },
-        'live-platinum-f6': { id: 'Strategi Live dengan Set Up Promo / Campaign.', en: 'Live Strategy with Promo / Campaign Set Up.' },
-        'live-platinum-f7': { id: 'Optimasi Google Ads (Budget Ads ditanggung brand).', en: 'Google Ads Optimization (Ads Budget borne by brand).' },
-        'live-platinum-f8': { id: 'Optimasi Live.', en: 'Live Optimization.' },
+        'live-platinum-f0': { id: '* 5%- 20% Sharing revenue per month', en: '* 5%- 20% Sharing revenue per month' }, // Fitur ini ditambahkan
+        'live-platinum-f1': { id: 'Akun Dari Pemilik Brand', en: 'Account From Brand Owner' }, // Mulai dari sini fitur baru
+        'live-platinum-f2': { id: 'Talent Host (Berpengalaman, Interaktif, Push Closing)', en: 'Talent Host (Experienced, Interactive, Push Closing)' },
+        'live-platinum-f3': { id: 'Crew Support ( Teknis Kontrol Live & Kreatif Konten)', en: 'Crew Support (Technical Live Control & Content Creative)' },
+        'live-platinum-f4': { id: 'Konten Creator Planner: 1 Video / Hari.', en: 'Content Creator Planner: 1 Video / Day.' },
+        'live-platinum-f5': { id: 'Upload konten setiap hari', en: 'Upload content every day' },
+        'live-platinum-f6': { id: 'Admin Upload ke semua platform.', en: 'Admin Upload to all platforms.' },
+        'live-platinum-f7': { id: 'Studio Set Up (Full equipment).', en: 'Studio Set Up (Full equipment).' },
+        'live-platinum-f8': { id: 'Strategi Live dengan Set Up Promo / Campaign.', en: 'Live Strategy with Promo / Campaign Set Up.' },
+        'live-platinum-f9': { id: 'Optimasi Live Penjualan & Traffic', en: 'Live Sales & Traffic Optimization' },
+        'live-platinum-f10': { id: 'Growth Follower & Brand Awareness', en: 'Follower Growth & Brand Awareness' },
+        'live-platinum-f11': { id: 'Optimasi Ads ( Exclude Budget )', en: 'Ads Optimization (Exclude Budget)' },
+        'live-platinum-f12': { id: 'Optimasi Live.', en: 'Live Optimization.' },
         //... (dan seterusnya untuk semua fitur platinum)
 
         // Web Dev
@@ -173,7 +176,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Achievements
         'achieve-title': { id: 'Pencapaian Kami', en: 'Our Achievements' },
-        'achieve-desc': { id: 'Click Panda memiliki banyak pengalaman di dalam industri Digital Marketing & Creative dan telah bekerja sama dengan lebih dari 1500 pebisnis/merek lokal di Indonesia, seperti: Sour Sally, Gulu Gulu, Nyapii, Ventela, Kebab Turki Baba Rafi, Booga-Booga, dan masih banyak lagi. Seiring bertambahnya pengguna kami, begitu pula tim Click Panda juga terus berkembang.', en: 'Click Panda has extensive experience in the Digital Marketing & Creative industry and has collaborated with over 1500 local businesses/brands in Indonesia, such as: Sour Sally, Gulu Gulu, Nyapii, Ventela, Kebab Turki Baba Rafi, Booga-Booga, and many more. As our users grow, so does the Click Panda team.' },
+        'achieve-desc': { 
+            id: 'Click Panda memiliki banyak pengalaman di dalam industri Digital Marketing & Creative dan telah bekerja sama dengan lebih dari 100 pebisnis/merek lokal di Indonesia, seperti: Teva, Era Fiesta Group, Richie Farm dan masih banyak lagi. Seiring bertambahnya pengguna kami, begitu pula tim Click Panda juga terus berkembang.', 
+            en: 'Click Panda has extensive experience in the Digital Marketing & Creative industry and has collaborated with over 100 local businesses/brands in Indonesia, such as: Teva, Era Fiesta Group, Richie Farm, and many more. As our users grow, so does the Click Panda team.' 
+        },
         'achieve-s1-val': { id: '200+', en: '200+' },
         'achieve-s1-text': { id: 'Anggota Tim', en: 'Team Members' },
         'achieve-s2-val': { id: '150+', en: '150+' },
@@ -205,7 +211,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'footer-link-p2': { id: 'Streamer', en: 'Streamers' },
         'footer-link-p3': { id: 'Influencer', en: 'Influencers' },
         'footer-links-contact': { id: 'Informasi Kontak', en: 'Contact Information' },
-        'footer-copyright': { id: 'All Right Reserved 2025 © CV. Chokro Project', en: 'All Rights Reserved 2025 © CV. Chokro Project' },
+        'footer-copyright': { id: 'All Right Reserved 2025 © By Click Panda', en: 'All Rights Reserved 2025 © By Click Panda' },
 
         // ==========================================================
         // === TAMBAHKAN KUNCI BARU DI BAWAH INI ===
@@ -223,7 +229,10 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Halaman Testimoni / Tentang Kami
         'testimoni-endorse-title': { id: 'LAYANAN ENDORSEMENT', en: 'ENDORSEMENT SERVICE' },
-        'testimoni-endorse-desc': { id: 'Tingkatkan jangkauan dan kredibilitas brand anda dengan Layanan Endorsement kami. Memanfaatkan pengaruh dari suara tepercaya untuk meningkatkan produk dan layanan anda.', en: 'Increase your brand\'s reach and credibility with our Endorsement Service. Leverage the influence of trusted voices to elevate your products and services.' },
+        'testimoni-endorse-desc': { 
+            id: 'Tingkatkan jangkauan dan kredibilitas brand anda dengan Layanan Live Shopping dan Ads kami. Memanfaatkan pengaruh dari suara terpercaya untuk meningkatkan produk dan layanan anda.', 
+            en: 'Increase your brand\'s reach and credibility with our Live Shopping and Ads Services. Leverage the influence of trusted voices to elevate your products and services.' 
+        },
         'testimoni-endorse-btn': { id: 'Pelajari &rarr;', en: 'Learn More &rarr;' },
         'testimoni-who-title': { id: 'Siapa Kami?', en: 'Who Are We?' },
         'testimoni-who-desc1': { id: 'Click Panda merupakan marketplace tepercaya yang menghubungkan kreator konten dengan pelaku bisnis dan merek lokal dan UKM dengan kehadiran digital kami.', en: 'Click Panda is a trusted marketplace that connects content creators with businesses, local brands, and SMEs through our digital presence.' },
@@ -241,8 +250,14 @@ document.addEventListener('DOMContentLoaded', function() {
         'testimoni-why-r2-desc': { id: 'Media sosial yang aktif itu berarti merek anda dikenal oleh banyak audiens target sehingga potensi untuk meningkatkan penjualan lebih tinggi lagi.', en: 'Active social media means your brand is known by a large target audience, increasing the potential for higher sales.' },
         'testimoni-why-r3-title': { id: '3. Kami Memberikan Hasil', en: '3. We Deliver Results' },
         'testimoni-why-r3-desc': { id: 'Dengan memiliki konten kreator berpengalaman dan Pusat Kreatif sebagai sumber daya dan wawasan, kami pasti dapat membantu Anda untuk tetap relevan di platform media sosial', en: 'By having experienced content creators and a Creative Hub as a resource for insights, we can surely help you stay relevant on social media platforms.' },
-        'testimoni-why-r4-title': { id: '4. Jaminan 100% Uang Kembali', en: '4. 100% Money-Back Guarantee' },
-        'testimoni-why-r4-desc': { id: 'Jika Anda tidak melihat dampak apa pun dari layanan kami, uang pembayaran akan dikembalikan, tanpa syarat.', en: 'If you do not see any impact from our services, your payment will be refunded, no questions asked.' },
+        'testimoni-why-r4-title': { 
+            id: '4. Jaminan 100% Hasil', 
+            en: '4. 100% Result Guarantee' 
+        },
+        'testimoni-why-r4-desc': { 
+            id: 'Kami hanya mencari hasil, bukan janji. Jika layanan kami tidak memberikan dampak yang Anda harapkan. Kepuasan Anda adalah jaminan kami.', 
+            en: 'We seek results, not promises. If our services do not deliver the impact you expect. Your satisfaction is our guarantee.' 
+        },
         // ==================================================
         // === TAMBAHKAN KUNCI BARU INI UNTUK HALAMAN TESTIMONI ===
         // ==================================================
@@ -368,5 +383,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // 7. Terapkan bahasa saat halaman pertama kali dimuat
     setLanguage(currentLang);
+    
 
 });

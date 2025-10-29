@@ -559,7 +559,7 @@ body {
     transition: opacity 0.3s ease;
 }
 .testimonial-ads-overlay p.small {
-    font-size: 0.9rem; /* Kecilkan ukuran font (sesuaikan jika perlu) */
+    font-size: 0.7rem; /* Kecilkan ukuran font (sesuaikan jika perlu) */
     line-height: 1.4;  /* Atur jarak antar baris agar nyaman dibaca */
 }
 /* 4. Tentukan apa yang terjadi saat di-hover */
@@ -765,4 +765,61 @@ body {
     width: 100%;
     height: 100%;
     margin-bottom: -7px; /* Perbaikan umum untuk 'gap' di bawah iframe */
+}
+.floating-buttons {
+    position: fixed; /* Tetap di layar */
+    bottom: 20px;
+    right: 20px;
+    z-index: 1030; /* Di atas elemen lain */
+    display: flex;
+    flex-direction: column; /* Menumpuk ke atas */
+    gap: 10px; /* Jarak antar tombol */
+}
+
+/* =================================== */
+/* BAGIAN 12: FLOATING BUTTONS        */
+/* =================================== */
+
+/* Wadah untuk menampung tombol */
+.floating-buttons {
+    position: fixed; /* Tetap di layar saat scroll */
+    bottom: 20px;    /* Jarak dari bawah */
+    right: 20px;     /* Jarak dari kanan */
+    z-index: 1000;   /* Pastikan di atas konten lain */
+    display: flex;
+    flex-direction: column; /* Susun tombol secara vertikal */
+    gap: 10px;       /* Jarak antar tombol */
+}
+
+/* Style dasar tombol (Anda sudah punya sebagian) */
+.btn-floating {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%; /* Membuatnya bulat */
+    display: flex;       /* Menggunakan flex untuk ikon di tengah */
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;   /* Ukuran ikon */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    
+    /* === WARNA DIPERBARUI === */
+    color: white;
+    background-color: var(--dark-green); /* Menggunakan warna hijau tua tema Anda */
+    
+    /* === TAMBAHKAN BORDER PUTIH DI SINI === */
+    border: 2px solid white; /* Border putih setebal 2px */
+    
+    transition: background-color 0.2s ease, transform 0.1s ease; /* Tambah transisi transform */
+    text-decoration: none; /* Hapus garis bawah jika ini adalah <a> */
+}
+
+.btn-floating:hover {
+    color: white;
+    background-color: #08584a; /* Warna hijau sedikit lebih gelap saat hover */
+    transform: scale(1.05);  /* Efek sedikit membesar saat hover */
+}
+
+/* Sembunyikan tombol scroll-to-top secara default */
+#scrollTopBtn {
+    display: none; /* Tetap disembunyikan awalnya */
 }

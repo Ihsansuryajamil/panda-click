@@ -73,8 +73,8 @@ document.addEventListener('DOMContentLoaded', function() {
         'live-silver-f13': { id: 'Optimasi Live', en: 'Live Optimization' },
         // Kunci T&C baru ditambahkan untuk kartu ini
         'live-silver-tnc-title': { id: 'T&C:', en: 'T&C:' },
-        'live-silver-tnc-1': { id: 'Live Shopping Gold menjaga toko Anda tetap terlihat dan relevan...', en: 'Live Shopping Gold keeps your store visible and relevant...' },
-        'live-silver-tnc-2': { id: 'Paket ini dikhususkan untuk Anda yang...', en: 'This package is specialized for those who...' },
+        'live-silver-tnc-1': { id: 'Live Shopping Gold menjaga toko Anda tetap terlihat dan relevan di Tiktok & Shopee dengan fitur sederhana namun efektif.', en: 'Live Shopping Gold keeps your store visible and relevant on Tiktok & Shopee with simple yet effective features.' },
+        'live-silver-tnc-2': { id: 'Paket ini dikhususkan untuk Anda yang melakukan Live Shopping di marketplace Tiktok & Shopee', en: 'This package is specialized for those of you doing Live Shopping on the Tiktok & Shopee marketplaces' },
         // f11 & f12 Dihapus
         
         // Platinum (Fitur Diperbarui)

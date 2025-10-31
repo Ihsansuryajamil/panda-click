@@ -29,52 +29,52 @@ document.addEventListener('DOMContentLoaded', function() {
         'services-title': { id: 'Layanan Kami', en: 'Our Services' },
 
         // Layanan Live Shopping
-        'services-live-title': { id: 'Live Shopping Only (TikTok/Shopee)', en: 'Live Shopping Only (TikTok/Shopee)' },
+        'services-live-title': { id: 'Live Shopping (TikTok/Shopee)', en: 'Live Shopping (TikTok/Shopee)' },
         'services-live-desc': { id: 'Dengan Live Shopping, Anda dapat meningkatkan kesadaran dan penjualan produk Anda. Paket ini memungkinkan Anda untuk berinteraksi dengan pelanggan secara real-time, meningkatkan kepercayaan dan kesadaran merek Anda.', en: 'With Live Shopping, you can increase awareness and sales of your products. This package allows you to interact with customers in real-time, boosting trust and your brand awareness.' },
         
-        // Live Gold
-        'live-gold-title': { id: 'Live Shopping Gold', en: 'Live Shopping Gold' },
+        // Live Gold (SEKARANG KONTEN SILVER)
+        'live-gold-title': { id: 'Live Shopping Silver', en: 'Live Shopping Silver' },
         'live-gold-price-prefix': { id: 'Mulai dari', en: 'Starting from' },
-        'live-gold-price': { id: 'Rp 18.000.000,-', en: 'IDR 18,000,000' },
+        'live-gold-price': { id: 'Rp 10.000.000,-', en: 'IDR 10,000,000' },
         'live-gold-price-suffix': { id: '/ Bulan', en: '/ Month' },
         'live-gold-promo': { id: '(Promo Diskon 20%)', en: '(20% Discount Promo)' },
         'live-gold-features': { id: 'Fitur:', en: 'Features:' },
         'live-gold-f1': { id: 'Akun TikTok disediakan', en: 'TikTok Account provided' },
-        'live-gold-f2': { id: 'Live TikTok durasi 4 - 6 jam setiap hari.', en: 'Live TikTok 4 - 6 hours duration every day.' },
+        'live-gold-f2': { id: 'Live TikTok durasi 2 - 4 jam setiap hari', en: 'Live TikTok 2 - 4 hours duration every day' },
         'live-gold-f3': { id: 'Talent Host (Berpengalaman, Interaktif, Push Closing)', en: 'Talent Host (Experienced, Interactive, Push Closing)' },
-        'live-gold-f4': { id: 'Crew Support ( Teknis Kontrol Live & Kreatif Konten)', en: 'Crew Support (Technical Live Control & Content Creative)' },
-        'live-gold-f5': { id: 'Konten Planner 1 Video / Hari (30 Video / Bulan)', en: 'Content Planner 1 Video / Day (30 Videos / Month)' },
-        'live-gold-f6': { id: 'Upload konten setiap hari (Termasuk hari Minggu/Tanggal Merah).', en: 'Upload content every day (Including Sundays/Holidays).' },
-        'live-gold-f7': { id: 'Studio Set Up dengan Dekorasi Brand', en: 'Studio Set Up with Brand Decoration' },
-        'live-gold-f8': { id: 'Strategi Live dengan Set Up Promo / Campaign', en: 'Live Strategy with Promo / Campaign Set Up' },
-        'live-gold-f9': { id: 'Optimasi Google Ads ( Exclude Budget )', en: 'Google Ads Optimization (Exclude Budget)' },
-        'live-gold-f10': { id: 'Optimasi Live Penjualan & Traffic', en: 'Live Sales & Traffic Optimization' },
-        'live-gold-f11': { id: 'Growth Follower Setiap Bulan', en: 'Follower Growth Every Month' },
-        'live-gold-f12': { id: 'Brand Awareness', en: 'Brand Awareness' },
-        'live-gold-f13': { id: 'Optimasi Live', en: 'Live Optimization' },
-        'live-gold-tnc': { id: 'T&C:', en: 'T&C:' },
-        'live-gold-t1': { id: 'Live Shopping Gold menjaga toko Anda tetap terlihat dan relevan di Tiktok & Shopee dengan fitur sederhana namun efektif.', en: 'Live Shopping Gold keeps your store visible and relevant on Tiktok & Shopee with simple yet effective features.' },
-        'live-gold-t2': { id: 'Paket ini dikhususkan untuk Anda yang melakukan Live Shopping di marketplace Tiktok & Shopee', en: 'This package is specialized for those of you doing Live Shopping on the Tiktok & Shopee marketplaces' },
+        'live-gold-f4': { id: 'Crew Support (Teknis Kontrol Live, Kreatif Konten).', en: 'Crew Support (Technical Live Control, Content Creative).' },
+        'live-gold-f5': { id: 'Konten Creator Planner: 1 Video / Hari (25 Video / Bulan).', en: 'Content Creator Planner: 1 Video / Day (25 Videos / Month).' },
+        'live-gold-f6': { id: 'Admin Upload ke platform', en: 'Admin Upload to platform' },
+        'live-gold-f7': { id: 'Studio Set Up (Full equipment).', en: 'Studio Set Up (Full equipment).' },
+        'live-gold-f8': { id: 'Strategi Live (Script Selling, Jam Prime Time).', en: 'Live Strategy (Selling Script, Prime Time Hours).' },
+        'live-gold-f9': { id: 'Laporan Mingguan (Penjualan, Traffic).', en: 'Weekly Report (Sales, Traffic).' },
+        'live-gold-f10': { id: 'Growth Follower & Brand Awareness.', en: 'Follower Growth & Brand Awareness.' },
+        // Kunci f11, f12, f13, tnc, t1, t2 tidak lagi digunakan oleh blok ini
         'live-gold-btn': { id: 'Hubungi kami &rarr;', en: 'Contact us &rarr;' },
 
-        // Paket Premium Lainnya
-        'services-premium-desc': { id: 'Paket Live Shopping lainnya..', en: 'Other Live Shopping packages..' },
-        // Silver
-        'live-silver-title': { id: 'PAKET SILVER', en: 'SILVER PACKAGE' },
-        'live-silver-price': { id: 'IDR 10.000.000', en: 'IDR 10,000,000' }, // Harga baru
+        // Silver (SEKARANG KONTEN GOLD)
+        'live-silver-title': { id: 'PAKET GOLD', en: 'GOLD PACKAGE' },
+        'live-silver-price': { id: 'IDR 18.000.000', en: 'IDR 18,000,000' }, 
         'live-silver-price-suffix': { id: '/ Bulan', en: '/ Month' },
-        'live-silver-promo': { id: '(Promo Diskon 20%)', en: '(20% Discount Promo)' }, // Promo baru
-        // f0 Dihapus
-        'live-silver-f1': { id: 'Akun TikTok disediakan', en: 'TikTok Account provided' }, // Mulai dari sini fitur baru
-        'live-silver-f2': { id: 'Live TikTok durasi 2 - 4 jam setiap hari', en: 'Live TikTok 2 - 4 hours duration every day' },
+        'live-silver-promo': { id: '(Promo Diskon 20%)', en: '(20% Discount Promo)' },
+        // f0 dihapus
+        'live-silver-f1': { id: 'Akun TikTok disediakan', en: 'TikTok Account provided' },
+        'live-silver-f2': { id: 'Live TikTok durasi 4 - 6 jam setiap hari.', en: 'Live TikTok 4 - 6 hours duration every day.' },
         'live-silver-f3': { id: 'Talent Host (Berpengalaman, Interaktif, Push Closing)', en: 'Talent Host (Experienced, Interactive, Push Closing)' },
-        'live-silver-f4': { id: 'Crew Support (Teknis Kontrol Live, Kreatif Konten).', en: 'Crew Support (Technical Live Control, Content Creative).' },
-        'live-silver-f5': { id: 'Konten Creator Planner: 1 Video / Hari (25 Video / Bulan).', en: 'Content Creator Planner: 1 Video / Day (25 Videos / Month).' },
-        'live-silver-f6': { id: 'Admin Upload ke platform', en: 'Admin Upload to platform' },
-        'live-silver-f7': { id: 'Studio Set Up (Full equipment).', en: 'Studio Set Up (Full equipment).' },
-        'live-silver-f8': { id: 'Strategi Live (Script Selling, Jam Prime Time).', en: 'Live Strategy (Selling Script, Prime Time Hours).' },
-        'live-silver-f9': { id: 'Laporan Mingguan (Penjualan, Traffic).', en: 'Weekly Report (Sales, Traffic).' },
-        'live-silver-f10': { id: 'Growth Follower & Brand Awareness.', en: 'Follower Growth & Brand Awareness.' },
+        'live-silver-f4': { id: 'Crew Support ( Teknis Kontrol Live & Kreatif Konten)', en: 'Crew Support (Technical Live Control & Content Creative)' },
+        'live-silver-f5': { id: 'Konten Planner 1 Video / Hari (30 Video / Bulan).', en: 'Content Planner 1 Video / Day (30 Videos / Month).' },
+        'live-silver-f6': { id: 'Upload konten setiap hari (Termasuk hari Minggu/Tanggal Merah).', en: 'Upload content every day (Including Sundays/Holidays).' },
+        'live-silver-f7': { id: 'Studio Set Up dengan Dekorasi Brand.', en: 'Studio Set Up with Brand Decoration.' },
+        'live-silver-f8': { id: 'Strategi Live dengan Set Up Promo / Campaign.', en: 'Live Strategy with Promo / Campaign Set Up.' },
+        'live-silver-f9': { id: 'Optimasi Google Ads ( Exclude Budget )', en: 'Google Ads Optimization (Exclude Budget)' },
+        'live-silver-f10': { id: 'Optimasi Live Penjualan & Traffic', en: 'Live Sales & Traffic Optimization' },
+        'live-silver-f11': { id: 'Growth Follower Setiap Bulan', en: 'Follower Growth Every Month' },
+        'live-silver-f12': { id: 'Brand Awareness', en: 'Brand Awareness' },
+        'live-silver-f13': { id: 'Optimasi Live', en: 'Live Optimization' },
+        // Kunci T&C baru ditambahkan untuk kartu ini
+        'live-silver-tnc-title': { id: 'T&C:', en: 'T&C:' },
+        'live-silver-tnc-1': { id: 'Live Shopping Gold menjaga toko Anda tetap terlihat dan relevan...', en: 'Live Shopping Gold keeps your store visible and relevant...' },
+        'live-silver-tnc-2': { id: 'Paket ini dikhususkan untuk Anda yang...', en: 'This package is specialized for those who...' },
         // f11 & f12 Dihapus
         
         // Platinum (Fitur Diperbarui)

@@ -161,7 +161,7 @@ body {
     min-height: 700px; 
 }
 .live-shopping-premium-section .service-list.small {
-    font-size: 0.75rem; /* Lebih kecil dari 0.9rem default */
+    font-size: 0.72rem; /* Lebih kecil dari 0.9rem default */
     line-height: 1.5;  /* Jarak antar baris lebih rapat */
 }
 /* =================================== */

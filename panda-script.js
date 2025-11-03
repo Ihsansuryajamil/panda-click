@@ -216,7 +216,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // ==========================================================
         // === TAMBAHKAN KUNCI BARU DI BAWAH INI ===
         // ==========================================================
-        'footer-contact-wa': { id: '+62 812-8767-2836', en: '+62 812-8767-2836' },
+        'footer-contact-wa': { id: '0813-1108-8288', en: '0813-1108-8288' },
         'footer-contact-ig': { id: 'clikPanda', en: 'clikPanda' },
         'footer-contact-fb': { id: 'Clik Panda', en: 'Clik Panda' },
         'footer-contact-tt': { id: 'clik.panda', en: 'clik.panda' },
@@ -325,7 +325,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'contact-addr-name': { id: 'Kantor Click Panda', en: 'Click Panda Office' },
         'contact-addr-detail': { id: 'Ruko DUTA GARDEN SQUARE A15, Jl. Husein Sastranegara, Jurumudi, Kecamatan Benda, Kota Tangerang, Banten 15124.', en: 'Ruko DUTA GARDEN SQUARE A15, Jl. Husein Sastranegara, Jurumudi, Benda District, Tangerang City, Banten 15124.' },
         'contact-social-title': { id: 'MEDIA SOSIAL', en: 'SOCIAL MEDIA' },
-        'contact-social-wa': { id: '+62 812-8767-2836', en: '+62 812-8767-2836' },
+        'contact-social-wa': { id: '0813-1108-8288', en: '0813-1108-8288' },
         'contact-social-ig': { id: 'clikPanda', en: 'clikPanda' },
         'contact-social-fb': { id: 'Clik Panda', en: 'Clik Panda' },
         'contact-social-tt': { id: 'clik.panda', en: 'clik.panda' },

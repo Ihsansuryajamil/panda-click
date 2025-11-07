@@ -217,9 +217,9 @@ document.addEventListener('DOMContentLoaded', function() {
         // === TAMBAHKAN KUNCI BARU DI BAWAH INI ===
         // ==========================================================
         'footer-contact-wa': { id: '0813-1108-8288', en: '0813-1108-8288' },
-        'footer-contact-ig': { id: 'Clik Panda', en: 'Clik Panda' },
-        'footer-contact-fb': { id: 'Clik Panda', en: 'Clik Panda' },
-        'footer-contact-tt': { id: 'Clik Panda', en: 'Clik Panda' },
+        'footer-contact-ig': { id: 'Click Panda', en: 'Click Panda' },
+        'footer-contact-fb': { id: 'Click Panda', en: 'Click Panda' },
+        'footer-contact-tt': { id: 'Click Panda', en: 'Click Panda' },
         // ==================================================
         // === TAMBAHKAN KUNCI BARU INI UNTUK HALAMAN 'TENTANG KAMI' ===
         // ==================================================
@@ -326,9 +326,9 @@ document.addEventListener('DOMContentLoaded', function() {
         'contact-addr-detail': { id: 'Ruko DUTA GARDEN SQUARE A15, Jl. Husein Sastranegara, Jurumudi, Kecamatan Benda, Kota Tangerang, Banten 15124.', en: 'Ruko DUTA GARDEN SQUARE A15, Jl. Husein Sastranegara, Jurumudi, Benda District, Tangerang City, Banten 15124.' },
         'contact-social-title': { id: 'MEDIA SOSIAL', en: 'SOCIAL MEDIA' },
         'contact-social-wa': { id: '0813-1108-8288', en: '0813-1108-8288' },
-        'contact-social-ig': { id: 'Clik Panda', en: 'Clik Panda' },
-        'contact-social-fb': { id: 'Clik Panda', en: 'Clik Panda' },
-        'contact-social-tt': { id: 'Clik Panda', en: 'Clik Panda' },
+        'contact-social-ig': { id: 'Click Panda', en: 'Click Panda' },
+        'contact-social-fb': { id: 'Click Panda', en: 'Click Panda' },
+        'contact-social-tt': { id: 'Click Panda', en: 'Click Panda' },
         'contact-social-btn': { id: 'Kontak via WhatsApp', en: 'Contact via WhatsApp' }
     };
 

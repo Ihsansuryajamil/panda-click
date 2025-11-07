@@ -180,7 +180,7 @@ body {
 
 /* BARU: Kurangi margin bawah teks promo agar list lebih naik */
 .live-shopping-premium-section .service-card-details p.text-warning {
-    margin-bottom: 0.7rem !important; /* Kurangi dari mb-3 (1rem) */
+    margin-bottom: 0.65rem !important; /* Kurangi dari mb-3 (1rem) */
 }
 /* =================================== */
 /* PERBAIKAN TINGGI KARTU LIVE SHOPPING */
@@ -188,7 +188,7 @@ body {
 
 /* Ini akan menimpa tinggi minimum 480px HANYA untuk kartu di section ini */
 .live-shopping-premium-section .service-card .card-body {
-    min-height: 770px; 
+    min-height: 790px; 
 }
 .live-shopping-premium-section .service-list.small {
     font-size: 0.72rem; /* Lebih kecil dari 0.9rem default */

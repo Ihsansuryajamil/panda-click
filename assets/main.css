@@ -156,6 +156,36 @@ body {
 /* PERBAIKAN TINGGI KARTU LIVE SHOPPING */
 /* =================================== */
 
+/* Ini akan menimpa tinggi minimum kartu HANYA untuk section ini */
+.live-shopping-premium-section .service-card .card-body {
+    min-height: 740px; /* Anda sudah punya 700px, 740px mungkin lebih baik */
+}
+
+/* Ini akan memperkecil ukuran font list */
+.live-shopping-premium-section .service-list.small {
+    font-size: 0.8rem; /* Anda sudah punya 0.72rem, 0.8rem mungkin lebih terbaca */
+    line-height: 1.5;
+}
+
+/* === BARU: Perkecil font-size Judul (h3) dan Harga (h2) === */
+.live-shopping-premium-section .service-card-details h3 {
+    font-size: 1.5rem; /* Perkecil dari default h3 (1.75rem) */
+}
+
+.live-shopping-premium-section .service-card-details h2 {
+    font-size: 1.75rem; /* Perkecil dari default h2 (2rem) */
+    margin-top: 0.75rem !important; /* Kurangi margin atas (dari my-3) */
+    margin-bottom: 0.75rem !important; /* Kurangi margin bawah (dari my-3) */
+}
+
+/* BARU: Kurangi margin bawah teks promo agar list lebih naik */
+.live-shopping-premium-section .service-card-details p.text-warning {
+    margin-bottom: 0.75rem !important; /* Kurangi dari mb-3 (1rem) */
+}
+/* =================================== */
+/* PERBAIKAN TINGGI KARTU LIVE SHOPPING */
+/* =================================== */
+
 /* Ini akan menimpa tinggi minimum 480px HANYA untuk kartu di section ini */
 .live-shopping-premium-section .service-card .card-body {
     min-height: 700px; 

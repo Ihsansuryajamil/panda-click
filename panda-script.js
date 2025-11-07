@@ -217,9 +217,9 @@ document.addEventListener('DOMContentLoaded', function() {
         // === TAMBAHKAN KUNCI BARU DI BAWAH INI ===
         // ==========================================================
         'footer-contact-wa': { id: '0813-1108-8288', en: '0813-1108-8288' },
-        'footer-contact-ig': { id: 'clikPanda', en: 'clikPanda' },
+        'footer-contact-ig': { id: 'Clik Panda', en: 'Clik Panda' },
         'footer-contact-fb': { id: 'Clik Panda', en: 'Clik Panda' },
-        'footer-contact-tt': { id: 'clik.panda', en: 'clik.panda' },
+        'footer-contact-tt': { id: 'Clik Panda', en: 'Clik Panda' },
         // ==================================================
         // === TAMBAHKAN KUNCI BARU INI UNTUK HALAMAN 'TENTANG KAMI' ===
         // ==================================================

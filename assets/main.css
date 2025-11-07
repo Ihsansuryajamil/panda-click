@@ -188,7 +188,7 @@ body {
 
 /* Ini akan menimpa tinggi minimum 480px HANYA untuk kartu di section ini */
 .live-shopping-premium-section .service-card .card-body {
-    min-height: 720px; 
+    min-height: 730px; 
 }
 .live-shopping-premium-section .service-list.small {
     font-size: 0.72rem; /* Lebih kecil dari 0.9rem default */

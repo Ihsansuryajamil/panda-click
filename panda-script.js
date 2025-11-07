@@ -326,9 +326,9 @@ document.addEventListener('DOMContentLoaded', function() {
         'contact-addr-detail': { id: 'Ruko DUTA GARDEN SQUARE A15, Jl. Husein Sastranegara, Jurumudi, Kecamatan Benda, Kota Tangerang, Banten 15124.', en: 'Ruko DUTA GARDEN SQUARE A15, Jl. Husein Sastranegara, Jurumudi, Benda District, Tangerang City, Banten 15124.' },
         'contact-social-title': { id: 'MEDIA SOSIAL', en: 'SOCIAL MEDIA' },
         'contact-social-wa': { id: '0813-1108-8288', en: '0813-1108-8288' },
-        'contact-social-ig': { id: 'clikPanda', en: 'clikPanda' },
+        'contact-social-ig': { id: 'Clik Panda', en: 'Clik Panda' },
         'contact-social-fb': { id: 'Clik Panda', en: 'Clik Panda' },
-        'contact-social-tt': { id: 'clik.panda', en: 'clik.panda' },
+        'contact-social-tt': { id: 'Clik Panda', en: 'Clik Panda' },
         'contact-social-btn': { id: 'Kontak via WhatsApp', en: 'Contact via WhatsApp' }
     };
 
